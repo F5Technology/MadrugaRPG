@@ -1,0 +1,2 @@
+moverPlayerOW();
+exibirSpritePlayerOW();

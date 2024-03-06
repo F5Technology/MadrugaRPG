@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"alinharCamera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"alinharCamera",
+  "parent":{
+    "name":"Sistema",
+    "path":"folders/Scripts/Sistema.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

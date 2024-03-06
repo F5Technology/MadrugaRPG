@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"moverPlayerOW",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"moverPlayerOW",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/Overworld/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
