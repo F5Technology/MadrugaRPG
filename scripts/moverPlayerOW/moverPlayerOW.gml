@@ -11,6 +11,20 @@ function moverPlayerOW() {
 			movimentoVertical = lengthdir_y(velocidade, direcao);
 			movimentoHorizontal = lengthdir_x(velocidade, direcao);
 			
+			//Ajuste na velocidade para corrigir o bug de shaking do objeto ao andar na diagonal
+			if (movimentoVertical != 0 && movimentoHorizontal  != 0) {
+				movimentoVertical = floor(movimentoVertical) ;
+				movimentoHorizontal = floor(movimentoHorizontal) ;
+				
+				if (movimentoVertical > 0) {
+				    movimentoVertical += 1;
+				}
+				
+				if (movimentoHorizontal > 0) {
+				    movimentoHorizontal += 1;
+				}
+			}
+			
 			y += movimentoVertical;
 			x += movimentoHorizontal;
 		}
