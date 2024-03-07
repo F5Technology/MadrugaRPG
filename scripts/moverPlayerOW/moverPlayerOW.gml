@@ -25,6 +25,9 @@ function moverPlayerOW() {
 				}
 			}
 			
+			movimentoVertical = checarColisaoVertical(movimentoVertical) ;
+			movimentoHorizontal = checarColisaoHorizontal(movimentoHorizontal) ;
+			
 			y += movimentoVertical;
 			x += movimentoHorizontal;
 		}

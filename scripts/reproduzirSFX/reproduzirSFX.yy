@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"reproduzirSFX",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"reproduzirSFX",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/Scripts/SFX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

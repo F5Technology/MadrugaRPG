@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"objConfiguracoes",
+  "%Name":"objColisao",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":123,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objConfiguracoes",
+  "name":"objColisao",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sistema",
-    "path":"folders/Objects/Sistema.yy",
+    "name":"Objetos de colisão",
+    "path":"folders/Objects/Overworld/Objetos de colisão.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,11 +26,16 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"tipo","filters":[],"listItems":[],"multiselect":false,"name":"tipo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprColisao",
+    "path":"sprites/sprColisao/sprColisao.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

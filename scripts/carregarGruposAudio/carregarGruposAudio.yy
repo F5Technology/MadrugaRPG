@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"carregarGruposAudio",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"carregarGruposAudio",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/Scripts/SFX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

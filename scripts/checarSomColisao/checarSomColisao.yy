@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"checarSomColisao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"checarSomColisao",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/Scripts/SFX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"objConfiguracoes",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":123,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"objArvore",
+  "eventList":[],
   "managed":true,
-  "name":"objConfiguracoes",
+  "name":"objArvore",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sistema",
-    "path":"folders/Objects/Sistema.yy",
+    "name":"Objetos de colisão",
+    "path":"folders/Objects/Overworld/Objetos de colisão.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objColisao",
+    "path":"objects/objColisao/objColisao.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
