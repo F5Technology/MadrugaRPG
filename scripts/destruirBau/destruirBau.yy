@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"destruirBau",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"destruirBau",
+  "parent":{
+    "name":"Bau",
+    "path":"folders/Scripts/Overworld/Bau.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

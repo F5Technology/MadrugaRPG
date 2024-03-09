@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"abrirBau",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"abrirBau",
+  "parent":{
+    "name":"Bau",
+    "path":"folders/Scripts/Overworld/Bau.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

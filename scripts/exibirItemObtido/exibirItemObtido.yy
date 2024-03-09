@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"exibirItemObtido",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exibirItemObtido",
+  "parent":{
+    "name":"UI",
+    "path":"folders/Scripts/Overworld/UI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"fadeInItemObtido",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fadeInItemObtido",
+  "parent":{
+    "name":"UI",
+    "path":"folders/Scripts/Overworld/UI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

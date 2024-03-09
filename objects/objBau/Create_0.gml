@@ -1,0 +1,1 @@
+executarEstado = checarPlayerProximo;

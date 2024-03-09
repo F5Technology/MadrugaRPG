@@ -1,6 +1,11 @@
 function exibirSpritePlayerOW() {
 		var direcaoAtual = 0;
-		var emMovimento = (baixo || cima || direita || esquerda);
+		
+		var parado = (
+				global.pause ||
+				 !(baixo || cima || direita || esquerda) ||
+				 (direita && esquerda) || (baixo && cima)
+		);
 		
 		if (direcao == 0) {
 		    direcaoAtual = DirecoesEnum.Leste;
@@ -30,35 +35,35 @@ function exibirSpritePlayerOW() {
 		switch (direcaoAtual) {
 		    case DirecoesEnum.Leste:
 				image_xscale = -1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoLateral : sprOWPlayerParadoLateral;
+		        sprite_index = parado ? sprOWPlayerParadoLateral : sprOWPlayerAndandoLateral;
 		        break;
 		    case DirecoesEnum.Nordeste:
 				image_xscale = -1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoDiagonalSuperior : sprOWPlayerParadoDiagonalSuperior;
+		        sprite_index = parado ? sprOWPlayerParadoDiagonalSuperior : sprOWPlayerAndandoDiagonalSuperior;
 		        break;
 		    case DirecoesEnum.Norte:
 				image_xscale = 1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoCima : sprOWPlayerParadoCima;
+		        sprite_index = parado ? sprOWPlayerParadoCima : sprOWPlayerAndandoCima;
 		        break;
 		    case DirecoesEnum.Noroeste:
 				image_xscale = 1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoDiagonalSuperior : sprOWPlayerParadoDiagonalSuperior;
+		        sprite_index = parado ? sprOWPlayerParadoDiagonalSuperior : sprOWPlayerAndandoDiagonalSuperior;
 		        break;
 		    case DirecoesEnum.Oeste:
 				image_xscale = 1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoLateral : sprOWPlayerParadoLateral;
+		        sprite_index = parado ? sprOWPlayerParadoLateral : sprOWPlayerAndandoLateral;
 		        break;
 		    case DirecoesEnum.Sudoeste:
 				image_xscale = 1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoDiagonalinferior : sprOWPlayerParadoDiagonalinferior;
+		        sprite_index = parado ? sprOWPlayerParadoDiagonalinferior : sprOWPlayerAndandoDiagonalinferior;
 		        break;
 		    case DirecoesEnum.Sul:
 				image_xscale = 1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoBaixo : sprOWPlayerParadoBaixo;
+		        sprite_index = parado ? sprOWPlayerParadoBaixo : sprOWPlayerAndandoBaixo;
 		        break;
 		    case DirecoesEnum.Sudeste:
 				image_xscale = -1;
-		        sprite_index = emMovimento ? sprOWPlayerAndandoDiagonalinferior : sprOWPlayerParadoDiagonalinferior;
+		        sprite_index = parado ? sprOWPlayerParadoDiagonalinferior : sprOWPlayerAndandoDiagonalinferior;
 		        break;
 		}
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"checarFImAnimacao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"checarFImAnimacao",
+  "parent":{
+    "name":"Ferramentas",
+    "path":"folders/Scripts/Ferramentas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
