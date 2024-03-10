@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"criarVariaveisGlobais",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"criarVariaveisGlobais",
+  "parent":{
+    "name":"Sistema",
+    "path":"folders/Scripts/Sistema.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

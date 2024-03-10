@@ -1,1 +1,1 @@
-criandoVariaveisGlobais();
+criarVariaveisGlobais();

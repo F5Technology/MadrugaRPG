@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"criandoVariaveisGlobais",
+  "%Name":"criarFichas",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"criandoVariaveisGlobais",
+  "name":"criarFichas",
   "parent":{
     "name":"Sistema",
     "path":"folders/Scripts/Sistema.yy",
