@@ -1,7 +1,7 @@
 function abrirBau() {
 	if (ativo && permiteAbertura) {
 	    ativo = false;
-		global.pause = true;
+		global.obtendoItem = true;
 		sprite_index = sprBauAbrindo;
 		executarEstado = abrindoBau;
 	}

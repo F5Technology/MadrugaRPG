@@ -1,5 +1,5 @@
 function moverPlayerOW() {
-		var pause = global.pause;
+		var pause = global.pause || global.obtendoItem;
 		
 		if (!pause) {
 			var emMovimento = (baixo || cima || direita || esquerda);

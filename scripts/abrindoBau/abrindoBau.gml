@@ -2,17 +2,15 @@ function abrindoBau() {
 	var finalizouAnimacao = checarFImAnimacao();
 	
 	if (finalizouAnimacao) {
-	    global.pause = false;
+	    global.obtendoItem = false;
 		sprite_index = sprBauAberto;
 		executarEstado = function () { }; //Script pra não fazer nada mesmo rs
 		
-		var uiItemObtido = instance_create_layer(x, y,  "Instances", objItemObtido, {item: item});
+		var uiItemObtido = instance_create_depth(x, y,  -99999, objItemObtido, {item: item});
 		
 		if (objInventario != 0) {
 			if (item.tipo == TipoItemEnum.Consumivel) {			
 				adicionarItemNoInventario(objInventario.consumiveis, item);
-				
-				show_debug_message(string(objInventario.consumiveis));
 			}
 			else if (item.tipo == TipoItemEnum.Equipavel) {
 				array_push(objInventario.equipaveis, item);
@@ -24,7 +22,7 @@ function abrindoBau() {
 	}
 	else if (round(image_index) == 8 && !bauAberto) {
 		bauAberto = true;
-	    reproduzirSFX(sndAbrindoBau);
+	    reproduzirSFXOverworld(sndAbrindoBau);
 	}
 }
 

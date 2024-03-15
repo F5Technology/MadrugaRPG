@@ -3,7 +3,7 @@ function checarSomColisao(reproduzir) {
 		
 		with(objSFX) {
 			if (!reproduzindoAudio && reproduzir) {
-					reproduzirSFX(sndColisao);
+					reproduzirSFXOverworld(sndColisao);
 					reproduzindoAudio = true;
 					alarm[0] = 30;
 			}		

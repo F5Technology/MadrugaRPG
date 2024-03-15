@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"objConfiguracoes",
+  "%Name":"objMenuPausa",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":123,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objConfiguracoes",
+  "name":"objMenuPausa",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sistema",
-    "path":"folders/Objects/Sistema.yy",
+    "name":"UI",
+    "path":"folders/Objects/Overworld/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlaceholderConfig",
-    "path":"sprites/sprPlaceholderConfig/sprPlaceholderConfig.yy",
+    "name":"sprMolduraMenu",
+    "path":"sprites/sprMolduraMenu/sprMolduraMenu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndItemObtido",
+  "%Name":"sndFecharMenu",
   "audioGroupId":{
     "name":"sfxUI",
     "path":"audiogroups/sfxUI",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":2,
   "conversionMode":0,
-  "duration":2.115918,
-  "name":"sndItemObtido",
+  "duration":1.38449,
+  "name":"sndFecharMenu",
   "parent":{
     "name":"UI",
     "path":"folders/Sounds/SFX/UI.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndItemObtido.mp3",
+  "soundFile":"sndFecharMenu.mp3",
   "type":1,
   "volume":1.0,
 }
