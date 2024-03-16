@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"exibirDadosPlayerNoMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exibirDadosPlayerNoMenu",
+  "parent":{
+    "name":"MenuPausa",
+    "path":"folders/Scripts/MenuPausa.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

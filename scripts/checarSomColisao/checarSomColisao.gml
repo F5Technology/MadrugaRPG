@@ -1,5 +1,5 @@
 function checarSomColisao(reproduzir) {
-	if (object_index == objPlayer) {
+	if (object_index == objPlayerOW) {
 		
 		with(objSFX) {
 			if (!reproduzindoAudio && reproduzir) {

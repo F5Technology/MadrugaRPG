@@ -15,7 +15,7 @@ function exibirItemObtido() {
 	
 	var posicaoXTexto = posicaoX + padding + sprite_get_width(item.icone) + 3;
 	
-	draw_set_font(fntItemObtido);
+	draw_set_font(fntIInfoNome);
 	draw_set_color(c_white);
 	//draw_text(posicaoXTexto, posicaoY + 7, texto);
 	draw_text_transformed(posicaoXTexto, posicaoY + 8, texto, 0.5, 0.5, image_angle);

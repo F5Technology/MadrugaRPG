@@ -1,7 +1,7 @@
 function moverPlayerOW() {
-		var pause = global.pause || global.obtendoItem;
+		var obtendoItem = global.obtendoItem;
 		
-		if (!pause) {
+		if (!obtendoItem) {
 			var emMovimento = (baixo || cima || direita || esquerda);
 			
 			if (emMovimento) {

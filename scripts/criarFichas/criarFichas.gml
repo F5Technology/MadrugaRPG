@@ -5,13 +5,24 @@ function criarFichas() {
 	{
 		nome: "Seu Madruga",
 		level: 1,
+		maxXP: 150,
 		xp: 0,
-		maxXp: 150,
+		maxHP: 675,
 		hp: 675,
 		maxPP: 195,
 		pp: 195,
 		dano: [26, 39],
-		defesa: 4
+		defesa: 4,
+		iconesMenu: [
+			sprIconeMadrugaPadrao,
+			sprIconeMadrugaAnimado,
+			sprIconeMadrugaMedo,
+			sprIconeMadrugaDormindo
+		],
+		iconesBatalha: {
+			dano: sprIconeMadrugaDano,
+			padrao: sprIconeMadrugaParado
+		}
 	}
 	
 	#endregion

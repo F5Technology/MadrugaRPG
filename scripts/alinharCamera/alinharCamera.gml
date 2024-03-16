@@ -1,4 +1,4 @@
 function alinharCamera() {
-	x = lerp(x, objPlayer.x, 0.05);
-	y = lerp(y, objPlayer.y, 0.05);
+	x = lerp(x, objPlayerOW.x, 0.05);
+	y = lerp(y, objPlayerOW.y, 0.05);
 }

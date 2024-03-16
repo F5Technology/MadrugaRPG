@@ -1,0 +1,1 @@
+ficha = variable_clone(Ficha.seuMadruga);
