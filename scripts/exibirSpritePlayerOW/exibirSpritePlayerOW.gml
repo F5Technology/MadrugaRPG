@@ -3,8 +3,8 @@ function exibirSpritePlayerOW() {
 		
 		var parado = (
 				global.pause || global.obtendoItem ||
-				 !(baixo || cima || direita || esquerda) ||
-				 (direita && esquerda) || (baixo && cima)
+				 (direita && esquerda) || (baixo && cima) ||
+				 !(baixo || cima || direita || esquerda) && velocidadeAnalogico <= 0 
 		);
 		
 		if (direcao == 0) {

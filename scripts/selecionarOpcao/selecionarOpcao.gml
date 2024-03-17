@@ -1,4 +1,8 @@
 function selecionarOpcao() {
+	if (opcaoSelecionada != OpcaoMenuPauseEnum.Continuar) {
+	    reproduzirSFXUI(sndOpcaoSelecionada);
+	}
+	
 	switch (opcaoSelecionada) {
 	    case OpcaoMenuPauseEnum.Itens:
 	        // TODO: Listar itens

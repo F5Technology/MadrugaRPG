@@ -41,6 +41,7 @@
     {"$GMObjectProperty":"","%Name":"esquerda","filters":[],"listItems":[],"multiselect":false,"name":"esquerda","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"cima","filters":[],"listItems":[],"multiselect":false,"name":"cima","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"baixo","filters":[],"listItems":[],"multiselect":false,"name":"baixo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"","%Name":"velocidadeAnalogico","filters":[],"listItems":[],"multiselect":false,"name":"velocidadeAnalogico","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

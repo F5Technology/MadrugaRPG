@@ -24,6 +24,8 @@ function executarMenuPausa() {
 			global.pause = true;
 			instance_deactivate_all(true);
 			instance_activate_object(objColisao);
+			instance_activate_object(objGamepad);
+			instance_activate_object(objConfiguracoes);
 			
 			instance_create_depth(posicaoX, posicaoY,  -99999, objMenuPausa, {fichaMadruga: ficha});
 		}
