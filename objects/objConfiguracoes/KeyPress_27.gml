@@ -1,1 +1,1 @@
-abrirMenuPausa();
+executarMenuPausa();

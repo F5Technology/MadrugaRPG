@@ -1,4 +1,4 @@
-function abrirMenuPausa() {
+function executarMenuPausa() {
 	var obtendoItem = global.obtendoItem;
 	
 	if (!obtendoItem) {

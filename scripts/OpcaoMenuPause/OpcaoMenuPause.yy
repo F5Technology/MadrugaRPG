@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"OpcaoMenuPause",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"OpcaoMenuPause",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Ferramentas/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

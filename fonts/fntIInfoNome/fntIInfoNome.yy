@@ -119,8 +119,8 @@
   "maintainGms1Font":false,
   "name":"fntIInfoNome",
   "parent":{
-    "name":"Overworld",
-    "path":"folders/Fonts/Overworld.yy",
+    "name":"UI",
+    "path":"folders/Fonts/UI.yy",
   },
   "pointRounding":0,
   "ranges":[
