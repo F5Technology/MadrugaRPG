@@ -1,5 +1,5 @@
 enum ItensEnum {
-	RefrescoGroselha = 1,
+	RefrescoTamarindo = 1,
 	RefrescoLimao = 2,
 	AnelDeFogo = 3
 }

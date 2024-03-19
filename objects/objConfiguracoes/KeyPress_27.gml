@@ -1,1 +1,3 @@
-executarMenuPausa();
+if (!global.pause) {
+    executarMenuPausa();
+}

@@ -36,20 +36,20 @@ function criarFichas() {
 		
 		//Consumiveis
 		{
-			codigo: ItensEnum.RefrescoGroselha,
-			nome: "Refresco de Groselha",
-			icone: sprRefrescoGroselha,
+			codigo: ItensEnum.RefrescoTamarindo,
+			nome: "Refresco de Tamarindo",
+			icone: sprRefrescoTamarindo,
 			tipo: TipoItemEnum.Consumivel,
-			HP: 10,
-			PP: 0
+			HP: 0,
+			PP: 100
 		},
 		{
 			codigo: ItensEnum.RefrescoLimao,
 			nome: "Refresco de Limao",
 			icone: sprRefrescoLimao,
 			tipo: TipoItemEnum.Consumivel,
-			HP: 0,
-			PP: 10
+			HP: 300,
+			PP: 0
 		},
 		//Equipaveis
 		{

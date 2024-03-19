@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndHoverMenu",
+  "%Name":"sndAbrir",
   "audioGroupId":{
     "name":"sfxUI",
     "path":"audiogroups/sfxUI",
@@ -10,7 +10,7 @@
   "compression":2,
   "conversionMode":0,
   "duration":1.38449,
-  "name":"sndHoverMenu",
+  "name":"sndAbrir",
   "parent":{
     "name":"UI",
     "path":"folders/Sounds/SFX/UI.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndHoverMenu.mp3",
+  "soundFile":"sndAbrir.mp3",
   "type":1,
   "volume":1.0,
 }

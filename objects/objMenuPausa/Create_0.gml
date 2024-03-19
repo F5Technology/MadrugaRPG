@@ -1,2 +1,2 @@
-reproduzirSFXUI(sndAbrirMenu);
+reproduzirSFXUI(sndAbrir);
 exibirIconePlayerNoMenu();

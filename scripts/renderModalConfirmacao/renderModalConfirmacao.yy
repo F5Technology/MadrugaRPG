@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"renderModalConfirmacao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"renderModalConfirmacao",
+  "parent":{
+    "name":"MenuPausa",
+    "path":"folders/Scripts/MenuPausa.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

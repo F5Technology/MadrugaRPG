@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ModalConfirmacao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ModalConfirmacao",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Ferramentas/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

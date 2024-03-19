@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"voltarMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"voltarMenu",
+  "parent":{
+    "name":"MenuPausa",
+    "path":"folders/Scripts/MenuPausa.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
