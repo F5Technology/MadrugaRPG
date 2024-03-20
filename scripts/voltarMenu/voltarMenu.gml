@@ -7,5 +7,6 @@ function voltarMenu() {
 	else {
 		opcaoSelecionada = 0;
 	    menuAtual = menuAnterior;
+		menuAnterior = MenuEnum.Principal;
 	}
 }

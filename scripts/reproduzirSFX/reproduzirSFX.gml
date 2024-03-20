@@ -9,3 +9,9 @@ function reproduzirSFXUI(sfx){
 	
 	audio_play_sound(sfx, 1, false);
 }
+
+function reproduzirSFXEfeitos(sfx){
+	audio_group_stop_all(sfxEfeitos);
+	
+	audio_play_sound(sfx, 1, false);
+}

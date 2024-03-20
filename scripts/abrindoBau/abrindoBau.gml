@@ -10,10 +10,10 @@ function abrindoBau() {
 		
 		if (objInventario != 0) {
 			if (item.tipo == TipoItemEnum.Consumivel) {			
-				adicionarItemNoInventario(objInventario.consumiveis, item);
+				adicionarItemNoInventario(objInventario.itens, item);
 			}
 			else if (item.tipo == TipoItemEnum.Equipavel) {
-				array_push(objInventario.equipaveis, item);
+				array_push(objInventario.equipamentos, item);
 			}
 		}
 		

@@ -11,7 +11,7 @@ function renderOpcoesMenuPrincipal(){
 			"Sair"
 		];
 		
-		draw_set_font(fntOpcaoMenu);
+		draw_set_font(fntMenu);
 		
 		for (var opcao = 0; opcao < array_length(opcoes); ++opcao) {
 			   

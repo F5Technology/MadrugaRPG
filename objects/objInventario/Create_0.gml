@@ -1,2 +1,2 @@
-equipaveis = [];
-consumiveis = [];
+itens = [];
+equipamentos = [];

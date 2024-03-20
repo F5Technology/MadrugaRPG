@@ -123,6 +123,10 @@ function checarComandoGamepad(){
 					if(botaoA) {
 						selecionarOpcao();
 					} 
+					
+					if(botaoB) {
+						voltarMenu();
+					} 
 				}
 			}
 			

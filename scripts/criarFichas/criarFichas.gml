@@ -27,12 +27,12 @@ function criarFichas() {
 	
 	#endregion
 	
-	#region Items
+	#region Itens
 	
 	item = 
 	[
 		// Item Vazio para manter o padrão do indice com o enum
-		{},
+		{ codigo: 0 },
 		
 		//Consumiveis
 		{

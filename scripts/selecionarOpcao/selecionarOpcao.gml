@@ -1,15 +1,21 @@
 function selecionarOpcao() {
 	switch (menuAtual) {
 	    case MenuEnum.Principal:
+				menuAnterior = menuAtual;
+				
 				if (opcaoSelecionada != OpcaoMenuPauseEnum.Continuar) {
 				    reproduzirSFXUI(sndOpcaoSelecionada);
 				}
 				
 				switch (opcaoSelecionada) {
 				    case OpcaoMenuPauseEnum.Itens:
+						opcaoSelecionada = 0;
+						menuAtual = MenuEnum.Itens;
 				        // TODO: Listar itens
 				        break;
 				    case OpcaoMenuPauseEnum.Equipamentos:
+						opcaoSelecionada = 0;
+						menuAtual = MenuEnum.Equipamentos;
 				        // TODO: Listar equipamentos
 				        break;
 				    case OpcaoMenuPauseEnum.Continuar:
@@ -18,15 +24,11 @@ function selecionarOpcao() {
 				        break;
 				    case OpcaoMenuPauseEnum.Sair:
 						opcaoSelecionada = 0;
-				        menuAnterior = menuAtual;
 						menuAtual = MenuEnum.Confirmacao;
 						
 						objetoConfirmacao = {
-							posX: x,
-							posY: y,
 							funcaoConfirmacao: game_end,
-							mensagem: "Tem certeza que deseja sair?",
-							tipoConfirmacao: ModalConfirmacaoEnum.Central
+							mensagem: "Tem certeza que deseja sair?"
 						}
 						
 				        break;
@@ -40,6 +42,26 @@ function selecionarOpcao() {
 			}
 			else {
 			    voltarMenu();
+			}
+			
+	        break;
+	    case MenuEnum.Itens:
+			var tamanhoInventario = array_length(objInventario.itens);
+			
+			if (tamanhoInventario > 0) {
+				reproduzirSFXUI(sndOpcaoSelecionada);			
+				menuAnterior = menuAtual;		
+				menuAtual = MenuEnum.Confirmacao;
+				itemSelecionado = opcaoSelecionada;
+				opcaoSelecionada = 0;
+				
+				objetoConfirmacao = {
+					funcaoConfirmacao: usarItemNoInventario,
+					mensagem: "Usar item?"
+				}
+			}
+			else {
+				reproduzirSFXUI(sndNegado);
 			}
 			
 	        break;

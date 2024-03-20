@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndUsandoItem",
+  "audioGroupId":{
+    "name":"sfxEfeitos",
+    "path":"audiogroups/sfxEfeitos",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":2,
+  "conversionMode":0,
+  "duration":2.35102,
+  "name":"sndUsandoItem",
+  "parent":{
+    "name":"Efeitos",
+    "path":"folders/Sounds/SFX/Efeitos.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndUsandoItem.mp3",
+  "type":1,
+  "volume":1.0,
+}

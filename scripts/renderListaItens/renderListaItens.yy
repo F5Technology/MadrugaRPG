@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"renderListaItens",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"renderListaItens",
+  "parent":{
+    "name":"MenuPausa",
+    "path":"folders/Scripts/MenuPausa.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
