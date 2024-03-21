@@ -8,7 +8,7 @@ function renderModalConfirmacao() {
 		var altura = string_height(objetoConfirmacao.mensagem) * 1.8 ;
 		
 		if (tamanhoMensagem < 70) {
-		    largura += padding;
+		    largura += padding + 2;
 		}
 		
 		var posicaoX = camera_get_view_x(view_camera[0]) + 
@@ -30,7 +30,11 @@ function renderModalConfirmacao() {
 		draw_text_transformed(posicaoX + padding, posicaoY + padding, objetoConfirmacao.mensagem, tamanhoTexto, tamanhoTexto, image_angle);
 		
 		posicaoY += padding * 3;
-		posicaoX += (largura / 1.7) - string_width(opcoes[0]);
+		
+		//Opcoes
+		//posicaoX += (largura / 1.5) - string_width(opcoes[0]); //=> No centro
+		posicaoX += largura - (string_width(opcoes[0]) * 1.7); //=> No lado direito
+		//posicaoX += largura / 6.3; //=> No lado esquerdo
 		
 		for (var opcao = 0; opcao < array_length(opcoes); ++opcao) {
 			var textoOpcao = opcoes[opcao];

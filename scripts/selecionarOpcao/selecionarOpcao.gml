@@ -1,4 +1,6 @@
 function selecionarOpcao() {
+	var tamanhoInventario = 0;
+	
 	switch (menuAtual) {
 	    case MenuEnum.Principal:
 				menuAnterior = menuAtual;
@@ -11,12 +13,10 @@ function selecionarOpcao() {
 				    case OpcaoMenuPauseEnum.Itens:
 						opcaoSelecionada = 0;
 						menuAtual = MenuEnum.Itens;
-				        // TODO: Listar itens
 				        break;
 				    case OpcaoMenuPauseEnum.Equipamentos:
 						opcaoSelecionada = 0;
 						menuAtual = MenuEnum.Equipamentos;
-				        // TODO: Listar equipamentos
 				        break;
 				    case OpcaoMenuPauseEnum.Continuar:
 						reproduzirSFXUI(sndFechar);
@@ -46,7 +46,7 @@ function selecionarOpcao() {
 			
 	        break;
 	    case MenuEnum.Itens:
-			var tamanhoInventario = array_length(objInventario.itens);
+			tamanhoInventario = array_length(objInventario.itens);
 			
 			if (tamanhoInventario > 0) {
 				reproduzirSFXUI(sndOpcaoSelecionada);			
@@ -58,6 +58,28 @@ function selecionarOpcao() {
 				objetoConfirmacao = {
 					funcaoConfirmacao: usarItemNoInventario,
 					mensagem: "Usar item?"
+				}
+			}
+			else {
+				reproduzirSFXUI(sndNegado);
+			}
+			
+	        break;
+	    case MenuEnum.Equipamentos:
+			tamanhoInventario = array_length(objInventario.equipamentos);
+			
+			if (tamanhoInventario > 0) {
+				reproduzirSFXUI(sndOpcaoSelecionada);	
+				
+				var equipado = objInventario.equipamentos[opcaoSelecionada].equipado;
+				menuAnterior = menuAtual;		
+				menuAtual = MenuEnum.Confirmacao;
+				itemSelecionado = opcaoSelecionada;
+				opcaoSelecionada = 0;
+				
+				objetoConfirmacao = {
+					funcaoConfirmacao: equiparItem,
+					mensagem: equipado ? "Remover?" : "Equipar?"
 				}
 			}
 			else {

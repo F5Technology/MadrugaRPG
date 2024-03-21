@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"equiparItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"equiparItem",
+  "parent":{
+    "name":"MenuPausa",
+    "path":"folders/Scripts/MenuPausa.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

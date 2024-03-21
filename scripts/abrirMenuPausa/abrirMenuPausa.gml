@@ -9,7 +9,7 @@ function executarMenuPausa() {
 		    global.pause = false;
 			instance_activate_all();
 			instance_destroy(objMenuPausa);
-			instance_destroy(objIconePlayerOW);
+			instance_destroy(objIconePlayerInventario);
 		}
 		else {
 			objPlayerOW.cima = false;

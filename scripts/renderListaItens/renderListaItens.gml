@@ -15,7 +15,6 @@ function renderListaItens() {
 			var indice = array_find_index(Ficha.item, function(ficha) { return ficha.codigo == codigoVerificado; });
 			
 			if (indice) {
-				var textoValoresRecuperacao = "";
 				var fichaItem = Ficha.item[indice];
 				var posicaoTextoY = posicaoY + 3;
 				var posicaoTextoX = posicaoX + sprite_get_width(fichaItem.icone) - 2;
@@ -33,25 +32,10 @@ function renderListaItens() {
 					
 					draw_rectangle(posicaoX, posicaoY - 2, largura, altura, true);
 					
-					
-					#region Descricao
-					
-					if (fichaItem.HP > 0 && fichaItem.PP > 0) {
-					    textoValoresRecuperacao = string_ext("{0} HP e {1} PP", [fichaItem.HP, fichaItem.PP]);
-					}
-					else if (fichaItem.HP > 0) {
-					    textoValoresRecuperacao = string_ext("{0} HP", [fichaItem.HP]);
-					}
-					else if (fichaItem.PP > 0) {
-					    textoValoresRecuperacao = string_ext("{0} PP", [fichaItem.PP]);
-					}
-					
+					//Descricao					
 					var posicaoDescricaoY = y + sprite_height / 2.5;
-					var descricao = string_ext("Recupera {0}", [textoValoresRecuperacao]);
 					
-					draw_text_transformed(posicaoX, posicaoDescricaoY, descricao, tamanhoTexto, tamanhoTexto, image_angle);
-				
-					#endregion
+					draw_text_transformed(posicaoX, posicaoDescricaoY, fichaItem.descricao, tamanhoTexto, tamanhoTexto, image_angle);
 					
 				    draw_set_color(c_yellow);
 				}

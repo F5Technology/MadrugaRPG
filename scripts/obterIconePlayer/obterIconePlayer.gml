@@ -1,4 +1,5 @@
 function obterIconePlayer(){
+	iconeAtual = objMenuPausa.fichaMadruga.iconesMenu[0];
 	sprite_index = objMenuPausa.fichaMadruga.iconesMenu[0];
 	array_delete(objMenuPausa.fichaMadruga.iconesMenu, 0, 1);
 	

@@ -1,22 +1,23 @@
 function descerOpcaoMenu() {
+	var limiteMaximo = 1;
 	var dentroLimite = false;
+	var tamanhoInventario = 0;
 	
 	switch (menuAtual) {
 	     case MenuEnum.Principal:
-			dentroLimite = (opcaoSelecionada < OpcaoMenuPauseEnum.Sair) 
-	        break;
-	     case MenuEnum.Confirmacao:
-			dentroLimite = (opcaoSelecionada < 1)
+			limiteMaximo = OpcaoMenuPauseEnum.Sair;
 	        break;
 		case MenuEnum.Itens:
-			var tamanhoInventario = array_length(objInventario.itens);
-			var limite = tamanhoInventario > 0 ? tamanhoInventario-1 : 0;
-			
-			dentroLimite =  (opcaoSelecionada < limite);
+			tamanhoInventario = array_length(objInventario.itens);
+			limiteMaximo = tamanhoInventario > 0 ? tamanhoInventario-1 : 0;
+	        break;
+		case MenuEnum.Equipamentos:
+			tamanhoInventario = array_length(objInventario.equipamentos);
+			limiteMaximo = tamanhoInventario > 0 ? tamanhoInventario-1 : 0;
 	        break;
 	}
 	
-	if (dentroLimite) {
+	if (opcaoSelecionada < limiteMaximo) {
 	    opcaoSelecionada++;
 		reproduzirSFXUI(sndHover);
 	}
