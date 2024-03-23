@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"desenharMoldura",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"desenharMoldura",
+  "parent":{
+    "name":"Efeitos",
+    "path":"folders/Scripts/Efeitos.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

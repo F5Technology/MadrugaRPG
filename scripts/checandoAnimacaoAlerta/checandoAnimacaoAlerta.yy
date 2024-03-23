@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"checandoAnimacaoAlerta",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"checandoAnimacaoAlerta",
+  "parent":{
+    "name":"Efeitos",
+    "path":"folders/Scripts/Efeitos.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
