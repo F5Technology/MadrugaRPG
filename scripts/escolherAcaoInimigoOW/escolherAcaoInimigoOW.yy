@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"escolherAcaoInimigoOW",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"escolherAcaoInimigoOW",
+  "parent":{
+    "name":"Inimigo",
+    "path":"folders/Scripts/Overworld/Inimigo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

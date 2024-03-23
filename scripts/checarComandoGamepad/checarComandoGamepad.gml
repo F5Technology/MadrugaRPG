@@ -49,7 +49,7 @@ function checarComandoGamepad(){
 					aplicarFullscreen();
 				} 
 				
-				if(botaoX) {
+				if(botaoX && !global.pause) {
 					executarMenuPausa();
 				} 
 			}
@@ -75,8 +75,7 @@ function checarComandoGamepad(){
 					velocidadeAnalogico = velocAnalogicoEsqu;
 					
 					if (velocAnalogicoEsqu > 0) {
-						direcao = direcaoAnalogicoEsqu;
-						moverPlayerOWAnalogico();
+						moverPlayerOWAnalogico(direcaoAnalogicoEsqu);
 					}
 				}
 			}

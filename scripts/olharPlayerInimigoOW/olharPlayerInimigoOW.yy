@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"olharPlayerInimigoOW",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"olharPlayerInimigoOW",
+  "parent":{
+    "name":"Inimigo",
+    "path":"folders/Scripts/Overworld/Inimigo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

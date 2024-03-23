@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"finalizarCooldownInimigoOW",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"finalizarCooldownInimigoOW",
+  "parent":{
+    "name":"Inimigo",
+    "path":"folders/Scripts/Overworld/Inimigo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

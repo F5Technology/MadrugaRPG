@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"procurarPlayerInimigoOW",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"procurarPlayerInimigoOW",
+  "parent":{
+    "name":"Inimigo",
+    "path":"folders/Scripts/Overworld/Inimigo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
