@@ -1,8 +1,9 @@
 function moverInimigoOW() {
 	var obtendoItem = global.obtendoItem;
+	var emTransicao = global.emTransicao;
 	var playerDetectado = procurarPlayerInimigoOW();
 	
-	if (!playerDetectado && !obtendoItem) {
+	if (!playerDetectado && !obtendoItem && !emTransicao) {
 		image_speed = 1;
 		var velocidade = 1;
 		var distanciaEntrePontos = distance_to_point(destinoX, destinoY);

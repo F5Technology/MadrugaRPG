@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"TipoTransicao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TipoTransicao",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Ferramentas/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

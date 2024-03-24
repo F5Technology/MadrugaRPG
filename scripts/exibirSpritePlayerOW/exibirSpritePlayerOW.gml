@@ -2,7 +2,7 @@ function exibirSpritePlayerOW() {
 		var direcaoAtual = 0;
 		
 		var parado = (
-				global.pause || global.obtendoItem ||
+				global.pause || global.obtendoItem ||global.emTransicao ||
 				 (direita && esquerda) || (baixo && cima) ||
 				 !(baixo || cima || direita || esquerda) && velocidadeAnalogico <= 0 
 		);
