@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"objConfiguracoes",
+  "%Name":"objInteracao",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":123,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"objConfiguracoes",
+  "name":"objInteracao",
   "overriddenProperties":[],
   "parent":{
     "name":"Sistema",
@@ -26,13 +27,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"permiteInteracao","filters":[],"listItems":[],"multiselect":false,"name":"permiteInteracao","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlaceholderConfig",
-    "path":"sprites/sprPlaceholderConfig/sprPlaceholderConfig.yy",
+    "name":"sprInteracao",
+    "path":"sprites/sprInteracao/sprInteracao.yy",
   },
   "spriteMaskId":null,
   "visible":true,

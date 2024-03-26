@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"abrirMenuPausa",
+  "%Name":"executarMenuPausa",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"abrirMenuPausa",
+  "name":"executarMenuPausa",
   "parent":{
     "name":"MenuPausa",
     "path":"folders/Scripts/MenuPausa.yy",

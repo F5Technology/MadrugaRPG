@@ -43,20 +43,47 @@ function checarComandoGamepad(){
 			
 			if (instance_exists(objConfiguracoes)) {
 				select = gamepad_button_check_pressed(slot, gp_select);
-				botaoX = gamepad_button_check_pressed(slot, gp_face4);
 				
 				if(select) {
 					aplicarFullscreen();
 				} 
+			}
+			
+			#endregion
+			
+			#region Interacao em Salas neutras
+			
+			if (instance_exists(objInteracao)) {
+				start = gamepad_button_check_pressed(slot, gp_start);
+				select = gamepad_button_check_pressed(slot, gp_select);
+				botaoB = gamepad_button_check_pressed(slot, gp_face1);
+				botaoA = gamepad_button_check_pressed(slot, gp_face2);
+				botaoY = gamepad_button_check_pressed(slot, gp_face3);
+				botaoX = gamepad_button_check_pressed(slot, gp_face4);
+			
 				
-				if(botaoX && !global.pause) {
-					executarMenuPausa();
+				if(
+					start ||
+					botaoB ||
+					botaoA ||
+					botaoY ||
+					botaoX
+				) {
+					interagirEmTela();
 				} 
 			}
 			
 			#endregion
 			
 			#region Modo Overworld
+			
+			if (instance_exists(objInventario)) {
+				botaoX = gamepad_button_check_pressed(slot, gp_face4);
+				
+				if(botaoX && !global.pause) {
+					executarMenuPausa();
+				} 
+			}
 			
 			if (instance_exists(objPlayerOW)) {
 				objPlayerOW.cima = cima;
