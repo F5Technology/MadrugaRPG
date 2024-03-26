@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"permitirInteracaoGameOver",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"permitirInteracaoGameOver",
+  "parent":{
+    "name":"Interacao",
+    "path":"folders/Scripts/Interacao.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

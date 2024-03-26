@@ -6,6 +6,10 @@ function interagirEmTela() {
 	    case rmTelaInicial:
 		        room_goto(rmTeste);
 		        break;
+		case rmGameOver:
+				audio_group_stop_all(sngCutscenes);			
+		        room_goto(rmTelaInicial);
+	        break;
 		}
 	}
 }

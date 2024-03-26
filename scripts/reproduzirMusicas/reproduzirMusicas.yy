@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"reproduzirMusicas",
   "parent":{
-    "name":"SFX",
-    "path":"folders/Scripts/SFX.yy",
+    "name":"SFX_OST",
+    "path":"folders/Scripts/SFX_OST.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
