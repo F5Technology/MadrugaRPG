@@ -7,5 +7,8 @@ function checarInteracao() {
 			alarm[1]  = 120;
 			reproduzirMusicaGameOver();
 	        break;
+	    case rmCreditos:
+			alarm[3]  = 120;
+	        break;
 	}
 }

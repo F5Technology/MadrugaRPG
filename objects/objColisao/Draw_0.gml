@@ -1,3 +1,5 @@
 /// @description Aplicação de profundidade em relação a outros objetos na tela
-depth = -y;
+if (!global.fimJogo) {
+   depth = -y;
+}
 draw_self();

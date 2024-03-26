@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"mscGameOver",
+  "%Name":"trackGameOver",
   "audioGroupId":{
     "name":"sngOST",
     "path":"audiogroups/sngOST",
@@ -10,7 +10,7 @@
   "compression":2,
   "conversionMode":0,
   "duration":49.294647,
-  "name":"mscGameOver",
+  "name":"trackGameOver",
   "parent":{
     "name":"Musicas",
     "path":"folders/Sounds/Musicas.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mscGameOver.ogg",
+  "soundFile":"trackGameOver.ogg",
   "type":1,
   "volume":1.0,
 }

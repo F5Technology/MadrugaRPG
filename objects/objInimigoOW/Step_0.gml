@@ -1,2 +1,6 @@
-depth = -y; // Aplicação de profundidade em relação a outros objetos na tela
+ // Aplicação de profundidade em relação a outros objetos na tela
+if (!global.fimJogo) {
+   depth = -y;
+}
+
 executarIA();

@@ -7,5 +7,5 @@ function reproduzirTransicaoBatalha() {
 function reproduzirMusicaGameOver() {
 	audio_group_stop_all(sngOST);
 	
-	audio_play_sound(mscGameOver, 1, false);
+	audio_play_sound(trackGameOver, 1, false);
 }

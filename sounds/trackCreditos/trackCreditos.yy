@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"trackCreditos",
+  "audioGroupId":{
+    "name":"sngOST",
+    "path":"audiogroups/sngOST",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":2,
+  "conversionMode":0,
+  "duration":16.8,
+  "name":"trackCreditos",
+  "parent":{
+    "name":"Musicas",
+    "path":"folders/Sounds/Musicas.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"trackCreditos.ogg",
+  "type":1,
+  "volume":1.0,
+}
