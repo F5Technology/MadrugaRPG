@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"Efeitos",
-    "path":"folders/Sprites/Overworld/Efeitos.yy",
+    "path":"folders/Sprites/Efeitos.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

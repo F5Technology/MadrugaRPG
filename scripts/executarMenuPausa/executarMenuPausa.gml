@@ -1,8 +1,9 @@
 function executarMenuPausa() {
+	var emBatalha = global.emBatalha;
 	var obtendoItem = global.obtendoItem;
 	var emTransicao = global.emTransicao;
 	
-	if (!obtendoItem && !emTransicao) {
+	if (!obtendoItem && !emTransicao && !emBatalha) {
 	    var pause = global.pause;
 		
 		if (pause) {

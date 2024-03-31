@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"posicionarObjetosBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"posicionarObjetosBatalha",
+  "parent":{
+    "name":"Battle",
+    "path":"folders/Scripts/Battle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
