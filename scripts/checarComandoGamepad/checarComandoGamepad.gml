@@ -147,7 +147,7 @@ function checarComandoGamepad(){
 					} 
 					
 					if(botaoA) {
-						selecionarOpcao();
+						selecionarOpcaoPausa();
 					} 
 					
 					if(botaoB) {

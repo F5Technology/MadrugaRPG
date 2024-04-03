@@ -1,0 +1,2 @@
+exibirOpcoesBattle();
+draw_self();

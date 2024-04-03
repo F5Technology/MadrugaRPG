@@ -1,1 +1,1 @@
-selecionarOpcao();
+selecionarOpcaoPausa();

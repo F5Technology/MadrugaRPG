@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"descreverBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"descreverBatalha",
+  "parent":{
+    "name":"Sistemas",
+    "path":"folders/Scripts/Battle/Sistemas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

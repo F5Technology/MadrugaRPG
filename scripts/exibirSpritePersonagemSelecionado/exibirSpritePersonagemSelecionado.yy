@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"exibirSpritePersonagemSelecionado",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"exibirSpritePersonagemSelecionado",
+  "parent":{
+    "name":"Sprites",
+    "path":"folders/Scripts/Battle/Sprites.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

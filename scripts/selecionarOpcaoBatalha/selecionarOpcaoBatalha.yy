@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"selecionarOpcaoBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"selecionarOpcaoBatalha",
+  "parent":{
+    "name":"MenuOpcoes",
+    "path":"folders/Scripts/Battle/MenuOpcoes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

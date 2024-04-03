@@ -6,6 +6,8 @@ function colidirInimigoOW() {
 	    reproduzirTransicaoBatalha();
 		
 		objBattle.alarm[0] = 60;
+		objBattle.fimTurno = false;
+		objBattle.personagemEmTurno = 0;
 		//objBattle.alarm[0] = 120;
 		inimigo.cooldown = true;
 		global.inimigoColidido = inimigo;

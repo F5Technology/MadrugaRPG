@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"posicionarObjetosBatalha",
   "parent":{
-    "name":"Battle",
-    "path":"folders/Scripts/Battle.yy",
+    "name":"Sistemas",
+    "path":"folders/Scripts/Battle/Sistemas.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

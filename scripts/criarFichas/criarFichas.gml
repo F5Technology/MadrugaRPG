@@ -28,6 +28,18 @@ function criarFichas() {
 	
 	#endregion
 	
+	#region Inimigos
+	
+	aranha = 
+	{
+		nome: "Aranha",
+		xp: 9,
+		hp: 9,
+		dano: [6, 9]
+	}
+	
+	#endregion
+	
 	#region Itens
 	
 	item = 

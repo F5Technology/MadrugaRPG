@@ -4,7 +4,7 @@ function renderModalConfirmacao() {
 		var marginOpcoes = 15;
 		var tamanhoMensagem = string_width(objetoConfirmacao.mensagem);
 		
-		var largura = tamanhoMensagem / 1.9;
+		var largura = tamanhoMensagem / 1.8;
 		var altura = string_height(objetoConfirmacao.mensagem) * 1.8 ;
 		
 		if (tamanhoMensagem < 70) {

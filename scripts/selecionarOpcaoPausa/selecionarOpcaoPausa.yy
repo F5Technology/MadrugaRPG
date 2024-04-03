@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"selecionarOpcaoPausa",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"selecionarOpcaoPausa",
+  "parent":{
+    "name":"MenuPausa",
+    "path":"folders/Scripts/MenuPausa.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

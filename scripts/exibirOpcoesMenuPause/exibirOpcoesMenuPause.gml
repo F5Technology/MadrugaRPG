@@ -4,10 +4,10 @@ function exibirOpcoesMenuPause(){
 	        renderOpcoesMenuPrincipal();
 	        break;
 	    case MenuEnum.Itens:
-	        renderListaItens();
+	        renderListaItensMenuPausa();
 	        break;
 	    case MenuEnum.Equipamentos:
-	        renderListaEquipmentos();
+	        renderListaEquipmentosMenuPausa();
 	        break;
 		case MenuEnum.Confirmacao:
 	        renderModalConfirmacao();
