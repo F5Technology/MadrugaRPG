@@ -2,6 +2,9 @@ function posicionarElementosBatalha() {
 	var emBatalha = global.emBatalha;
 	
 	if (emBatalha) {
+		var tamanhoMinimoPP = 2;
+		var tamanhoMinimoHP = 0.86;
+		var tamanhoPreenchimento = 0;
 		var posicaoX = camera_get_view_x(view_camera[0]);
 		var posicaoY = camera_get_view_y(view_camera[0]);
 		
@@ -18,9 +21,43 @@ function posicionarElementosBatalha() {
 		posicaoY += 20;
 		draw_sprite(sprBarraHPVazio, 0, posicaoX, posicaoY);
 		
+		if (object_exists(objPlayerBattle)) {
+			tamanhoPreenchimento = (objPlayerBattle.ficha.hp/objPlayerBattle.ficha.maxHP) * sprite_get_width(sprPreenchimentoHP);
+			
+			if (tamanhoPreenchimento < tamanhoMinimoHP && tamanhoPreenchimento > 0) {
+			    tamanhoPreenchimento = tamanhoMinimoHP;
+			}
+			
+			draw_sprite_part(
+				sprPreenchimentoHP, 
+				0, 0, 0,
+				tamanhoPreenchimento, 
+				sprite_get_height(sprPreenchimentoHP),
+				posicaoX + 10, 
+				posicaoY
+			);
+		}
+		
 		//PP player
 		posicaoY += sprite_get_height(sprBarraHPVazio);
 		draw_sprite(sprBarraPPVazio, 0, posicaoX, posicaoY);
+		
+		if (object_exists(objPlayerBattle)) {
+			tamanhoPreenchimento = (objPlayerBattle.ficha.pp/objPlayerBattle.ficha.maxPP) * sprite_get_width(sprPreenchimentoPP);
+			
+			if (tamanhoPreenchimento < tamanhoMinimoPP && tamanhoPreenchimento > 0) {
+			    tamanhoPreenchimento = tamanhoMinimoPP;
+			}
+			
+			draw_sprite_part(
+				sprPreenchimentoPP,
+				0, 0, 0, 
+				tamanhoPreenchimento, 
+				sprite_get_height(sprPreenchimentoPP), 
+				posicaoX + 10, 
+				posicaoY
+			);
+		}
 		
 		#region Elementos temporarios somente para checar o posicionamento dos elementos
 		

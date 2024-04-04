@@ -11,7 +11,9 @@ function selecionarOpcaoBatalha() {
 						defenderBatalha();
 				        break;
 				    case OpcaoMenuBatalhaEnum.Itens:
-						//TODO: Criar a função
+						sprite_index = noone;
+						opcaoSelecionada = 0;
+						menuAtual = MenuEnum.Itens;
 				        break;
 				    case OpcaoMenuBatalhaEnum.Fugir:
 						sprite_index = noone;
@@ -34,6 +36,20 @@ function selecionarOpcaoBatalha() {
 			}
 			else {
 			    voltarMenuBatalha();
+			}
+			
+	        break;
+	    case MenuEnum.Itens:
+			var tamanhoInventario = array_length(objInventario.itens);
+			
+			if (tamanhoInventario > 0) {
+				reproduzirSFXUI(sndOpcaoSelecionada);
+				codigoVerificado = objInventario.itens[opcaoSelecionada].codigo;
+				var indice = array_find_index(Ficha.item, function(ficha) { return ficha.codigo == codigoVerificado; });
+				
+				if (indice) {
+					prepararUsarItemBatalha(Ficha.item[indice]);
+				}
 			}
 			
 	        break;

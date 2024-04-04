@@ -1,6 +1,5 @@
 function descerOpcaoMenu() {
 	var limiteMaximo = 1;
-	var dentroLimite = false;
 	var tamanhoInventario = 0;
 	
 	switch (menuAtual) {

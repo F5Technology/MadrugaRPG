@@ -10,7 +10,20 @@ function executarAcao(){
 	        // TODO
 	        break;
 	    case AcaoBatalhaEnum.UsarItem:
-	        // TODO
+	       if (itemSelecionado) {
+			   image_speed = 1;
+		       usarItemEmBatalha();
+		   }
+		   
+		   if (checarFImAnimacao()) {
+				objBattle.fimTurno = true;
+				spriteAtual = sprMadrugaBattleIdle;
+				objIconePlayerBattle.sprite_index = sprIconeMadrugaPadrao;
+				acaoAtual = AcaoBatalhaEnum.Nenhum;
+				acao = function () {
+					//Funcao vazia
+				}
+		   }
 	        break;
 	    case AcaoBatalhaEnum.Fugir:
 	        if (image_alpha > 0) {

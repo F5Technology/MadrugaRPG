@@ -37,6 +37,7 @@
     {"$GMObjectProperty":"","%Name":"acao","filters":[],"listItems":[],"multiselect":false,"name":"acao","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
     {"$GMObjectProperty":"","%Name":"spriteAtual","filters":[],"listItems":[],"multiselect":false,"name":"spriteAtual","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"defendendo","filters":[],"listItems":[],"multiselect":false,"name":"defendendo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"","%Name":"itemSelecionado","filters":[],"listItems":[],"multiselect":false,"name":"itemSelecionado","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -5,6 +5,9 @@ function exibirOpcoesBattle() {
 			var posicaoY = player.y + 4;
 			draw_sprite(sprMoldeOpcoesBattle, 0, posicaoX, posicaoY);
 	        break;
+		case MenuEnum.Itens:
+	        renderListaItensMenuBatalha();
+	        break;
 		case MenuEnum.Confirmacao:
 	        renderModalConfirmacao();
 	        break;

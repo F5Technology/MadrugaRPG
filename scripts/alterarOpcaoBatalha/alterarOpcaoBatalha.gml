@@ -1,8 +1,8 @@
-function alterarOpcaoBatalha() {
-	reproduzirSFXUI(sndHover);
-	
+function alterarOpcaoBatalha() {	
 	switch (menuAtual) {
 	    case MenuEnum.Principal:
+			reproduzirSFXUI(sndHover);
+			
 			switch (opcaoSelecionada) {
 			    case OpcaoMenuBatalhaEnum.Atacar:
 					x = player.x + 21;
@@ -26,7 +26,24 @@ function alterarOpcaoBatalha() {
 			        break;
 			}
 	        break;
+		case MenuEnum.Itens:
+			var tamanhoInventario = array_length(objInventario.itens);
+			var limiteMaximo = tamanhoInventario > 0 ? tamanhoInventario-1 : 0;
+			
+			if (limiteMaximo > 0) {
+				reproduzirSFXUI(sndHover);
+				
+				if (opcaoSelecionada < 0) {
+				    opcaoSelecionada = limiteMaximo;
+				}
+				else if (opcaoSelecionada > limiteMaximo)  {
+				    opcaoSelecionada = 0;
+				}	
+			}
+	        break;
 	    case MenuEnum.Confirmacao:
+			reproduzirSFXUI(sndHover);
+			
 			if (opcaoSelecionada < 0) {
 			    opcaoSelecionada = 1;
 			}
