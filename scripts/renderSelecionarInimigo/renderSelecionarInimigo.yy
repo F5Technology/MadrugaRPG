@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"renderSelecionarInimigo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"renderSelecionarInimigo",
+  "parent":{
+    "name":"MenuOpcoes",
+    "path":"folders/Scripts/Battle/MenuOpcoes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,4 +1,6 @@
 function alterarOpcaoBatalha() {	
+	var limiteMaximo = 0;
+	
 	switch (menuAtual) {
 	    case MenuEnum.Principal:
 			reproduzirSFXUI(sndHover);
@@ -26,9 +28,38 @@ function alterarOpcaoBatalha() {
 			        break;
 			}
 	        break;
+		case MenuEnum.Atacar:
+			var tamanhoListaAtaques = array_length(player.ficha.ataques);
+			limiteMaximo = tamanhoListaAtaques > 0 ? tamanhoListaAtaques-1 : 0;
+			
+			if (limiteMaximo > 0) {
+				reproduzirSFXUI(sndHover);
+				
+				if (opcaoSelecionada < 0) {
+				    opcaoSelecionada = limiteMaximo;
+				}
+				else if (opcaoSelecionada > limiteMaximo)  {
+				    opcaoSelecionada = 0;
+				}	
+			}
+		case MenuEnum.SelecionarInimigo:
+			var quantidadeInimigos = array_length(listaInimigos);
+			limiteMaximo = quantidadeInimigos > 0 ? quantidadeInimigos-1 : 0;
+			
+			if (limiteMaximo > 0) {
+				reproduzirSFXUI(sndHover);
+				
+				if (opcaoSelecionada < 0) {
+				    opcaoSelecionada = limiteMaximo;
+				}
+				else if (opcaoSelecionada > limiteMaximo)  {
+				    opcaoSelecionada = 0;
+				}	
+			}
+	        break;
 		case MenuEnum.Itens:
 			var tamanhoInventario = array_length(objInventario.itens);
-			var limiteMaximo = tamanhoInventario > 0 ? tamanhoInventario-1 : 0;
+			limiteMaximo = tamanhoInventario > 0 ? tamanhoInventario-1 : 0;
 			
 			if (limiteMaximo > 0) {
 				reproduzirSFXUI(sndHover);

@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprPlaceholderValor",
+    "path":"sprites/sprPlaceholderValor/sprPlaceholderValor.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

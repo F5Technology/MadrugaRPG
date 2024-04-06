@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprTransicaoPlaceholder",
-    "path":"sprites/sprTransicaoPlaceholder/sprTransicaoPlaceholder.yy",
+    "name":"sprPlaceholderTransicao",
+    "path":"sprites/sprPlaceholderTransicao/sprPlaceholderTransicao.yy",
   },
   "spriteMaskId":null,
   "visible":true,

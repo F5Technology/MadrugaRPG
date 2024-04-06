@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"prepararParaAtacar",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"prepararParaAtacar",
+  "parent":{
+    "name":"Madruga",
+    "path":"folders/Scripts/Battle/Acoes/Madruga.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

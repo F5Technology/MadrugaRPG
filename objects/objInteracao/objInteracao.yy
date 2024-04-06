@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprInteracao",
-    "path":"sprites/sprInteracao/sprInteracao.yy",
+    "name":"sprPlaceholderInteracao",
+    "path":"sprites/sprPlaceholderInteracao/sprPlaceholderInteracao.yy",
   },
   "spriteMaskId":null,
   "visible":true,

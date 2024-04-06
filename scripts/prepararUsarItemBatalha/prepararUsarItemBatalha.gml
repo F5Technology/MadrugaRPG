@@ -1,7 +1,7 @@
 function prepararUsarItemBatalha(item) {
 	objBattle.textoInfo = string_ext("Seu Madruga tomou um {0}!", [item.nome]);
 	
-	with (objOpcoesBattle.player) {
+	with (player) {
 		image_index = 0;
 		itemSelecionado = item;
 		spriteAtual = sprMadrugaBattleUsandoItem;
@@ -10,5 +10,5 @@ function prepararUsarItemBatalha(item) {
 		alarm[0] = 30;
 	}
 	
-	instance_destroy(objOpcoesBattle);
+	instance_destroy();
 }

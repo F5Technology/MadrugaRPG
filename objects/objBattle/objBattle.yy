@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBatalhaPlaceholder",
-    "path":"sprites/sprBatalhaPlaceholder/sprBatalhaPlaceholder.yy",
+    "name":"sprPlaceholderBatalha",
+    "path":"sprites/sprPlaceholderBatalha/sprPlaceholderBatalha.yy",
   },
   "spriteMaskId":null,
   "visible":true,

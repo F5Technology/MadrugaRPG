@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"aplicarDanoEmInimigo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"aplicarDanoEmInimigo",
+  "parent":{
+    "name":"Madruga",
+    "path":"folders/Scripts/Battle/Acoes/Madruga.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

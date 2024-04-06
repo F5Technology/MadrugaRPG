@@ -8,9 +8,9 @@ function fugirBatalha() {
 		acao = posicionarParaAcao;
 		move_towards_point(x - 20, y, 2);
 		alarm[0] = 30;
+		
+		objIconePlayerBattle.sprite_index = ficha.iconesBatalha.fugindo;
 	}
-	
-	objIconePlayerBattle.sprite_index = sprIconeMadrugaMedo;
 	
 	instance_destroy(objOpcoesBattle);
 }

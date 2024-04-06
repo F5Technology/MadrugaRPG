@@ -38,11 +38,15 @@
     {"$GMObjectProperty":"","%Name":"menuAtual","filters":[],"listItems":[],"multiselect":false,"name":"menuAtual","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"menuAnterior","filters":[],"listItems":[],"multiselect":false,"name":"menuAnterior","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"objetoConfirmacao","filters":[],"listItems":[],"multiselect":false,"name":"objetoConfirmacao","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
+    {"$GMObjectProperty":"","%Name":"listaInimigos","filters":[],"listItems":[],"multiselect":false,"name":"listaInimigos","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprPlaceholderOpcoesBatalha",
+    "path":"sprites/sprPlaceholderOpcoesBatalha/sprPlaceholderOpcoesBatalha.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

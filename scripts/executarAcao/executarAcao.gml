@@ -1,13 +1,25 @@
 function executarAcao(){
 	switch (acaoAtual) {
-	    case AcaoBatalhaEnum.Nenhum:
-	        // TODO
-	        break;
 	    case AcaoBatalhaEnum.Atacar:
-	        // TODO
-	        break;
-	    case AcaoBatalhaEnum.Defender:
-	        // TODO
+			if (ataqueSelecionado && ataqueSelecionado.tipo ==  AtaquesEnum.Normal) {
+				if (spriteAtual != sprMadrugaBattleAtacando) {
+				    image_index = 0;
+					spriteAtual = sprMadrugaBattleAtacando;
+				}
+				
+				if (round(image_index) == 1 && inimigoSelecionado) {
+					aplicarDanoEmInimigo();
+				}
+				
+				if (checarFImAnimacao()) {
+					alarm[1] = 30;
+					image_speed = 0;
+					ataqueSelecionado = 0;
+				}
+			} 
+			else if (ataqueSelecionado && ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
+				//TODO
+			}
 	        break;
 	    case AcaoBatalhaEnum.UsarItem:
 	       if (itemSelecionado) {

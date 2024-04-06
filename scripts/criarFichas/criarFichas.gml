@@ -8,10 +8,9 @@ function criarFichas() {
 		maxXP: 150,
 		xp: 0,
 		maxHP: 675,
-		hp: 375,
+		hp: 675,
 		maxPP: 195,
-		pp: 175,
-		dano: [26, 39],
+		pp: 195,
 		defesa: 4,
 		anel: ItensEnum.Nenhum,
 		iconesMenu: [
@@ -22,8 +21,27 @@ function criarFichas() {
 		],
 		iconesBatalha: {
 			dano: sprIconeMadrugaDano,
-			padrao: sprIconeMadrugaParado
-		}
+			padrao: sprIconeMadrugaParado,
+			fugindo: sprIconeMadrugaMedo
+		},
+		ataques: [
+			{
+					tipo: AtaquesEnum.Normal,
+					nome: "Ataque normal",
+					mensagem: "Seu Madruga atacou {0}",
+					descricao: "Efetua um golpe normal no inimigo",
+					custoPP: 0,
+					dano: [26, 39]
+			},
+			{
+					tipo: AtaquesEnum.BastaoFogo,
+					nome: "Bastao de fogo",
+					mensagem: "Seu Madruga atingiu {0} com o bastão de fogo",
+					descricao: "Cria uma bola de fogo que atinge o inimigo",
+					custoPP: 50,
+					dano: [100]
+			}
+		]
 	}
 	
 	#endregion
@@ -34,7 +52,8 @@ function criarFichas() {
 	{
 		nome: "Aranha",
 		xp: 9,
-		hp: 9,
+		maxHP: 175,
+		hp: 175,
 		dano: [6, 9]
 	}
 	

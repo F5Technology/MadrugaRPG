@@ -4,7 +4,15 @@ function posicionarParaAcao() {
 	        // TODO
 	        break;
 	    case AcaoBatalhaEnum.Atacar:
-	        // TODO
+			if (ataqueSelecionado.tipo ==  AtaquesEnum.Normal) {
+				if (point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 6) {
+				    speed = 0;
+					spriteAtual = sprMadrugaBattleIdle;
+				}
+			} 
+			else if (ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
+				//TODO
+			}
 	        break;
 	    case AcaoBatalhaEnum.UsarItem:
 	       if (checarFImAnimacao()) {
@@ -14,7 +22,7 @@ function posicionarParaAcao() {
 		   }
 	        break;
 	    case AcaoBatalhaEnum.Fugir:
-	        if (point_direction(x, y, origemX - 20, origemY) <= 2) {
+	        if (point_distance(x, y, origemX - 20, origemY) <= 2) {
 			    speed = 0;
 			}
 	        break;

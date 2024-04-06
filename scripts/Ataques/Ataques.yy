@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Ataques",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Ataques",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Ferramentas/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

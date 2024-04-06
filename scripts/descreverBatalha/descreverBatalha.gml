@@ -2,7 +2,7 @@ function descreverBatalha() {
 	var emBatalha = global.emBatalha;
 		
 	if (emBatalha && string_length(textoInfo) > 0) {
-		var altura = string_height(textoInfo) * 1.2;
+		var altura = 19.20;
 		var largura = string_width(textoInfo) * 0.7;
 		var posicaoX =  camera_get_view_x(view_camera[0]) + sprite_get_width(sprCenarioBattle) / 2 - largura / 2;
 		var posicaoY =  camera_get_view_y(view_camera[0]) + 10;

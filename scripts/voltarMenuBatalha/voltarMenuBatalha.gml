@@ -25,9 +25,14 @@ function voltarMenuBatalha() {
 			}
 		}
 		else {
+			if (menuAtual == MenuEnum.SelecionarInimigo) {		
+			    listaInimigos[opcaoSelecionada].selecionado = false;
+			}
+		
 			opcaoSelecionada = 0;
 		}
 		
+		objBattle.textoInfo = "";
 	    menuAtual = menuAnterior;
 		menuAnterior = MenuEnum.Principal;
 	}

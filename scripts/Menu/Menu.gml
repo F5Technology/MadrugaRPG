@@ -3,5 +3,6 @@ enum MenuEnum {
 	Itens = 1,
 	Equipamentos = 2,
 	Confirmacao = 3,
-	Atacar = 4
+	Atacar = 4,
+	SelecionarInimigo = 5
 }

@@ -39,6 +39,7 @@ function renderListaItensMenuBatalha() {
 				
 				if (opcaoSelecionada == i) {
 				    draw_set_color(c_yellow);
+					objBattle.textoInfo = fichaItem.descricao;
 				}
 				else {
 					draw_set_color(#AE6C37);

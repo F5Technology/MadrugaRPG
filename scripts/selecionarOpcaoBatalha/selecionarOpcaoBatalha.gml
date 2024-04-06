@@ -5,7 +5,9 @@ function selecionarOpcaoBatalha() {
 				
 				switch (opcaoSelecionada) {
 				    case OpcaoMenuBatalhaEnum.Atacar:
-						//TODO: Criar a função
+						sprite_index = noone;
+						opcaoSelecionada = 0;
+						menuAtual = MenuEnum.Atacar;
 				        break;
 				    case OpcaoMenuBatalhaEnum.Defender:
 						defenderBatalha();
@@ -39,6 +41,22 @@ function selecionarOpcaoBatalha() {
 			}
 			
 	        break;
+	    case MenuEnum.Atacar:
+			reproduzirSFXUI(sndOpcaoSelecionada);
+			player.ataqueSelecionado = player.ficha.ataques[opcaoSelecionada];
+			
+			opcaoSelecionada = 0;
+			menuAnterior = MenuEnum.Atacar;
+			menuAtual = MenuEnum.SelecionarInimigo;
+			listaInimigos = array_filter(objBattle.personagensEmBatalha, 
+			function(personagem, index) { 
+				return personagem.object_index == objInimigoBattle 
+			})
+			break;
+	    case MenuEnum.SelecionarInimigo: 
+			reproduzirSFXUI(sndOpcaoSelecionada);
+			prepararParaAtacar(listaInimigos[opcaoSelecionada]);
+			break;
 	    case MenuEnum.Itens:
 			var tamanhoInventario = array_length(objInventario.itens);
 			
