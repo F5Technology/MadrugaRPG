@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ajustarGravidadeAlphaValorBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ajustarGravidadeAlphaValorBatalha",
+  "parent":{
+    "name":"Sistemas",
+    "path":"folders/Scripts/Battle/Sistemas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

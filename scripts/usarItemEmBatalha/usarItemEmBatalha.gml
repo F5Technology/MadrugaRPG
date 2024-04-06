@@ -3,12 +3,14 @@ function usarItemEmBatalha() {
 		var valorPP = itemSelecionado.PP;
 		
 		if (ficha.hp + valorHP > ficha.maxHP) {
+			valorHP = ficha.maxHP - ficha.hp;
 			ficha.hp = ficha.maxHP;
 		} else {
 			ficha.hp += valorHP;
 		}
 		
 		if (ficha.pp + valorPP > ficha.maxPP) {
+			valorPP = ficha.maxPP - ficha.pp;
 			ficha.pp = ficha.maxPP;
 		} else {
 			ficha.pp += valorPP;
@@ -21,6 +23,15 @@ function usarItemEmBatalha() {
 		
 		if (objInventario.itens[indice].quantidade <= 0) {
 		    array_delete(objInventario.itens, indice, 1);
+		}
+		
+		//Exibição do valor recuperado
+		if (itemSelecionado.HP > 0) {
+		    instance_create_depth(x, y, -9999999, objValorBatalha, {valor: valorHP, cor: #8CD612});
+		}
+		
+		if (itemSelecionado.PP > 0) {
+		    instance_create_depth(x, y, -9999999, objValorBatalha, {valor: valorPP, cor: #5BA8FF});
 		}
 		
 		//Efeito brilho do icone

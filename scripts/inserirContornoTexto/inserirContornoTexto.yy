@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"inserirContornoTexto",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"inserirContornoTexto",
+  "parent":{
+    "name":"Ferramentas",
+    "path":"folders/Scripts/Ferramentas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
