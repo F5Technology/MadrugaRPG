@@ -1,8 +1,5 @@
 function posicionarParaAcao() {
 	switch (acaoAtual) {
-	    case AcaoBatalhaEnum.Nenhum:
-	        // TODO
-	        break;
 	    case AcaoBatalhaEnum.Atacar:
 			if (point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 6) {
 			    speed = 0;

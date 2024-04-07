@@ -1,17 +1,53 @@
 function criarFichas() {
+	#region Dados level
+	
+	dadoMadruga = [
+		{},
+		{
+			maxXP: 150,
+			maxHP: 675,
+			maxPP: 200,
+			defesa: 4,
+			dano: {
+				normal: [26, 39],
+				bastaoFogo: [100]
+			},
+			custoPP: {
+				normal: 0,
+				bastaoFogo: 50
+			}
+		},
+		{
+			maxXP: 300,
+			maxHP: 750,
+			maxPP: 225,
+			defesa: 5,
+			dano: {
+				normal: [29, 44],
+				bastaoFogo: [200]
+			},
+			custoPP: {
+				normal: 0,
+				bastaoFogo: 60
+			}
+		}
+	] 
+	
+	#endregion
+	
 	#region Personagens jogaveis
 	
 	seuMadruga = 
 	{
 		nome: "Seu Madruga",
 		level: 1,
-		maxXP: 150,
+		maxXP: dadoMadruga[1].maxXP,
 		xp: 0,
-		maxHP: 675,
-		hp: 675,
-		maxPP: 200,
-		pp: 200,
-		defesa: 4,
+		maxHP: dadoMadruga[1].maxHP,
+		hp: dadoMadruga[1].maxHP,
+		maxPP: dadoMadruga[1].maxPP,
+		pp:  dadoMadruga[1].maxPP,
+		defesa: dadoMadruga[1].defesa,
 		anel: ItensEnum.Nenhum,
 		iconesMenu: [
 			sprIconeMadrugaPadrao,
@@ -30,16 +66,16 @@ function criarFichas() {
 					nome: "Ataque normal",
 					mensagem: "Seu Madruga atacou {0}",
 					descricao: "Efetua um golpe normal no inimigo",
-					custoPP: 0,
-					dano: [26, 39]
+					custoPP: dadoMadruga[1].custoPP.normal,
+					dano: dadoMadruga[1].dano.normal
 			},
 			{
 					tipo: AtaquesEnum.BastaoFogo,
 					nome: "Bastao de fogo",
 					mensagem: "Seu Madruga atingiu {0} com o bastao de fogo",
 					descricao: "Cria uma bola de fogo que atinge o inimigo",
-					custoPP: 50,
-					dano: [100]
+					custoPP: dadoMadruga[1].custoPP.bastaoFogo,
+					dano: dadoMadruga[1].dano.bastaoFogo
 			}
 		]
 	}

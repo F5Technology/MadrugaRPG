@@ -1,0 +1,1 @@
+tamanhoBarraHPVermelho = (objPlayerOW.ficha.hp/objPlayerOW.ficha.maxHP) * sprite_get_width(sprPreenchimentoHP);

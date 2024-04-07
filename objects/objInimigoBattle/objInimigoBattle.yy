@@ -32,6 +32,7 @@
     {"$GMObjectProperty":"","%Name":"ficha","filters":[],"listItems":[],"multiselect":false,"name":"ficha","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
     {"$GMObjectProperty":"","%Name":"spriteAtual","filters":[],"listItems":[],"multiselect":false,"name":"spriteAtual","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"hit","filters":[],"listItems":[],"multiselect":false,"name":"hit","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"","%Name":"tamanhoBarraHPVermelho","filters":[],"listItems":[],"multiselect":false,"name":"tamanhoBarraHPVermelho","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

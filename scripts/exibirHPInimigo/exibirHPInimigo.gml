@@ -13,6 +13,19 @@ function exibirHPInimigo() {
 		    tamanhoPreenchimento = tamanhoMinimoHP;
 		}
 		
+		if (tamanhoPreenchimento < tamanhoBarraHPVermelho) {
+		    tamanhoBarraHPVermelho -= (tamanhoBarraHPVermelho - tamanhoPreenchimento) * 0.1;
+		}
+		
+		draw_sprite_part(
+			sprPreenchimentoHPVermelho, 
+			0, 0, 0,
+			tamanhoBarraHPVermelho, 
+			sprite_get_height(sprPreenchimentoHP),
+			posicaoX + 10, 
+			posicaoY
+		);
+				
 		draw_sprite_part(
 			sprPreenchimentoHP, 
 			0, 0, 0,
