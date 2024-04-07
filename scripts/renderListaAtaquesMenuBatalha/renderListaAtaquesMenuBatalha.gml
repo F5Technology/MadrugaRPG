@@ -3,7 +3,7 @@ function renderListaAtaquesMenuBatalha() {
 	var posicaoX = x;
 	var posicaoY = y;
 	var tamanhoTexto = 0.5;
-	var largura = string_width("Bastao de fogo") / 1.8;
+	var largura = string_width("Bastao de fogo") - 10;
 	var altura = sprite_get_height(sprRefrescoLimao) * 1.6;
 	var tamanhoLista = array_length(player.ficha.ataques);
 	
@@ -26,7 +26,16 @@ function renderListaAtaquesMenuBatalha() {
 			draw_set_color(#AE6C37);
 		}
 		
+		//Nome
 		draw_text_transformed(posicaoX, posicaoY, ataque.nome, tamanhoTexto, tamanhoTexto, image_angle);
+		
+		//PP
+		if (ataque.custoPP > 0) {
+			var pp = string_ext("{0}PP", [ataque.custoPP]);
+			var posicaoTextoX = posicaoX + largura - padding * 9;
+			
+			draw_text_transformed(posicaoTextoX, posicaoY, pp, tamanhoTexto, tamanhoTexto, image_angle);
+		}
 		
 		posicaoY += string_height(ataque.nome) - 4;
 	}

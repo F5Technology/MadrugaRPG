@@ -19,12 +19,6 @@ function aplicarDanoEmInimigo() {
 	    inimigoSelecionado.ficha.hp = 0;
 	}
 	
-	ficha.pp -= ataqueSelecionado.custoPP;
-	
-	if (ficha.pp < 0) {
-	    ficha.pp = 0;
-	}
-	
 	instance_create_depth(inimigoSelecionado.x,inimigoSelecionado. y, -9999999, objValorBatalha, {valor: dano, cor: #ffffff});
 	
 	inimigoSelecionado = 0;

@@ -18,7 +18,16 @@ function executarAcao(){
 				}
 			} 
 			else if (ataqueSelecionado && ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
-				//TODO
+				if (round(image_index) == 4 && inimigoSelecionado) {
+					instance_create_depth(x + 5, y - 5, depth-20, objBastaoFogo, {inimigoSelecionado: inimigoSelecionado, ataqueSelecionado: ataqueSelecionado});
+					inimigoSelecionado = 0;
+				}
+				
+				if (checarFImAnimacao()) {
+					alarm[1] = 60;
+					image_speed = 0;					
+					ataqueSelecionado = 0;
+				}
 			}
 	        break;
 	    case AcaoBatalhaEnum.UsarItem:

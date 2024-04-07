@@ -4,14 +4,9 @@ function posicionarParaAcao() {
 	        // TODO
 	        break;
 	    case AcaoBatalhaEnum.Atacar:
-			if (ataqueSelecionado.tipo ==  AtaquesEnum.Normal) {
-				if (point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 6) {
-				    speed = 0;
-					spriteAtual = sprMadrugaBattleIdle;
-				}
-			} 
-			else if (ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
-				//TODO
+			if (point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 6) {
+			    speed = 0;
+				spriteAtual = sprMadrugaBattleIdle;
 			}
 	        break;
 	    case AcaoBatalhaEnum.UsarItem:

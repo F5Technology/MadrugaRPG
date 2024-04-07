@@ -9,8 +9,8 @@ function criarFichas() {
 		xp: 0,
 		maxHP: 675,
 		hp: 675,
-		maxPP: 195,
-		pp: 195,
+		maxPP: 200,
+		pp: 200,
 		defesa: 4,
 		anel: ItensEnum.Nenhum,
 		iconesMenu: [
@@ -36,7 +36,7 @@ function criarFichas() {
 			{
 					tipo: AtaquesEnum.BastaoFogo,
 					nome: "Bastao de fogo",
-					mensagem: "Seu Madruga atingiu {0} com o bastão de fogo",
+					mensagem: "Seu Madruga atingiu {0} com o bastao de fogo",
 					descricao: "Cria uma bola de fogo que atinge o inimigo",
 					custoPP: 50,
 					dano: [100]

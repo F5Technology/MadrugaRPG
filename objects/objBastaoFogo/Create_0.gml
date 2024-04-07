@@ -1,0 +1,1 @@
+move_towards_point(inimigoSelecionado.x, inimigoSelecionado.y, 6);

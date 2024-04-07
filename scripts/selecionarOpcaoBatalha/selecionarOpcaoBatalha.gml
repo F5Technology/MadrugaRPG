@@ -42,16 +42,23 @@ function selecionarOpcaoBatalha() {
 			
 	        break;
 	    case MenuEnum.Atacar:
-			reproduzirSFXUI(sndOpcaoSelecionada);
-			player.ataqueSelecionado = player.ficha.ataques[opcaoSelecionada];
+			var ataque = player.ficha.ataques[opcaoSelecionada];
 			
-			opcaoSelecionada = 0;
-			menuAnterior = MenuEnum.Atacar;
-			menuAtual = MenuEnum.SelecionarInimigo;
-			listaInimigos = array_filter(objBattle.personagensEmBatalha, 
-			function(personagem, index) { 
-				return personagem.object_index == objInimigoBattle 
-			})
+			if (ataque.custoPP <= player.ficha.pp) {
+				reproduzirSFXUI(sndOpcaoSelecionada);
+				player.ataqueSelecionado = ataque;
+				
+				opcaoSelecionada = 0;
+				menuAnterior = MenuEnum.Atacar;
+				menuAtual = MenuEnum.SelecionarInimigo;
+				listaInimigos = array_filter(objBattle.personagensEmBatalha, 
+				function(personagem, index) { 
+					return personagem.object_index == objInimigoBattle 
+				})
+			}
+			else {
+			    reproduzirSFXUI(sndNegado);
+			}
 			break;
 	    case MenuEnum.SelecionarInimigo: 
 			reproduzirSFXUI(sndOpcaoSelecionada);
