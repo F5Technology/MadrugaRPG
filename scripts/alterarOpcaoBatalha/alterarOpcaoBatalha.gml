@@ -3,7 +3,9 @@ function alterarOpcaoBatalha() {
 	
 	switch (menuAtual) {
 	    case MenuEnum.Principal:
-			reproduzirSFXUI(sndHover);
+			if (opcaoSelecionada != opcaoAnterior) {
+				reproduzirSFXUI(sndHover);
+			}
 			
 			switch (opcaoSelecionada) {
 			    case OpcaoMenuBatalhaEnum.Atacar:
@@ -32,7 +34,7 @@ function alterarOpcaoBatalha() {
 			var tamanhoListaAtaques = array_length(player.ficha.ataques);
 			limiteMaximo = tamanhoListaAtaques > 0 ? tamanhoListaAtaques-1 : 0;
 			
-			if (limiteMaximo > 0) {
+			if (tamanhoListaAtaques > 0) {
 				reproduzirSFXUI(sndHover);
 				
 				if (opcaoSelecionada < 0) {
@@ -46,7 +48,7 @@ function alterarOpcaoBatalha() {
 			var quantidadeInimigos = array_length(listaInimigos);
 			limiteMaximo = quantidadeInimigos > 0 ? quantidadeInimigos-1 : 0;
 			
-			if (limiteMaximo > 0) {
+			if (quantidadeInimigos > 0) {
 				reproduzirSFXUI(sndHover);
 				
 				if (opcaoSelecionada < 0) {
@@ -61,7 +63,7 @@ function alterarOpcaoBatalha() {
 			var tamanhoInventario = array_length(objInventario.itens);
 			limiteMaximo = tamanhoInventario > 0 ? tamanhoInventario-1 : 0;
 			
-			if (limiteMaximo > 0) {
+			if (tamanhoInventario > 0) {
 				reproduzirSFXUI(sndHover);
 				
 				if (opcaoSelecionada < 0) {

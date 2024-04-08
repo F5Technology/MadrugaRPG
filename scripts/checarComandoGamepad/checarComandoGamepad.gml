@@ -158,6 +158,88 @@ function checarComandoGamepad(){
 			
 			#endregion
 			
+			#region Modo Batalha
+			
+			if (instance_exists(objOpcoesBattle)) {
+				cima = gamepad_button_check_pressed(slot, gp_padu);
+				baixo = gamepad_button_check_pressed(slot, gp_padd);
+				direita = gamepad_button_check_pressed(slot, gp_padr);
+				esquerda = gamepad_button_check_pressed(slot, gp_padl);
+				botaoB = gamepad_button_check_pressed(slot, gp_face1);
+				botaoA = gamepad_button_check_pressed(slot, gp_face2);
+				
+				
+				if (!analogicoSegurado) {
+					analogicoSegurado = velocAnalogicoEsqu > 0;
+					
+					if (analogicoSegurado) {						
+						cima = (direcaoAnalogicoEsqu >= 45 && direcaoAnalogicoEsqu <= 135);
+						baixo = (direcaoAnalogicoEsqu >= 225 && direcaoAnalogicoEsqu <= 315);
+						direita = (direcaoAnalogicoEsqu >= 315 || direcaoAnalogicoEsqu <= 45);
+						esquerda = (direcaoAnalogicoEsqu >= 135 && direcaoAnalogicoEsqu <= 225);
+					}
+				}
+				else if (velocAnalogicoEsqu <= 0)  {
+				   analogicoSegurado = false;
+				}
+					
+				var descerOpcao = baixo || direita;
+				var subirOpcao = cima || esquerda;
+				
+				with (objOpcoesBattle) {
+					if (menuAtual == MenuEnum.Principal) {
+						if (velocAnalogicoEsqu > 0) {
+							cima = (direcaoAnalogicoEsqu >= 45 && direcaoAnalogicoEsqu <= 135);
+							baixo = (direcaoAnalogicoEsqu >= 225 && direcaoAnalogicoEsqu <= 315);
+							direita = (direcaoAnalogicoEsqu >= 315 || direcaoAnalogicoEsqu <= 45);
+							esquerda = (direcaoAnalogicoEsqu >= 135 && direcaoAnalogicoEsqu <= 225);
+						}
+						
+						if (cima) {	
+							opcaoAnterior = opcaoSelecionada;
+							opcaoSelecionada = OpcaoMenuBatalhaEnum.Defender;
+							alterarOpcaoBatalha();
+						}
+						if (baixo) {
+							opcaoAnterior = opcaoSelecionada;
+						    opcaoSelecionada = OpcaoMenuBatalhaEnum.Itens;
+							alterarOpcaoBatalha();
+						}
+						if (direita) {
+							opcaoAnterior = opcaoSelecionada;
+						    opcaoSelecionada = OpcaoMenuBatalhaEnum.Atacar;
+							alterarOpcaoBatalha();
+						}
+						if (esquerda) {
+							opcaoAnterior = opcaoSelecionada;
+						    opcaoSelecionada = OpcaoMenuBatalhaEnum.Fugir;
+							alterarOpcaoBatalha();
+						}
+					}
+					else {
+						if(subirOpcao) {
+							 opcaoSelecionada++;
+							 alterarOpcaoBatalha();
+						} 
+						
+						if(descerOpcao) {
+							 opcaoSelecionada--;
+							 alterarOpcaoBatalha();
+						} 
+					}
+					
+					if(botaoA) {
+						selecionarOpcaoBatalha();
+					} 
+					
+					if(botaoB) {
+						voltarMenuBatalha();
+					} 
+				}
+			}
+			
+			#endregion
+			
 			//show_debug_message("Direção analogico direito: " + string(direcaoAnalogicoDir));
 			//show_debug_message("Velocidade analogico direito: " + string(velocAnalogicoDir));
 			//show_debug_message("Direção analogico esquerdo: " + string(direcaoAnalogicoEsqu));

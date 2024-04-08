@@ -1,5 +1,6 @@
 if (menuAtual == MenuEnum.Principal) {
-   opcaoSelecionada = OpcaoMenuBatalhaEnum.Fugir;
+	opcaoAnterior = opcaoSelecionada;
+	opcaoSelecionada = OpcaoMenuBatalhaEnum.Fugir;
 }
 else {
     opcaoSelecionada--;
