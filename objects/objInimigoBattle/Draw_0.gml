@@ -1,10 +1,10 @@
 draw_sprite(sprSombraAranhaBattle, image_index, x, y + 8);
 exibirSpritePersonagemSelecionado();
 
-if (hit) {
+if (hit || morto) {
 	exibirHPInimigo();
 	
-	if (checarFImAnimacao()) {
+	if (hit && checarFImAnimacao()) {
 	   image_speed = 0;
 	}
 }

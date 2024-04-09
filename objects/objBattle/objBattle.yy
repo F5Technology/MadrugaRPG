@@ -32,7 +32,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"","%Name":"fimTurno","filters":[],"listItems":[],"multiselect":false,"name":"fimTurno","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
-    {"$GMObjectProperty":"","%Name":"personagensEmBatalha","filters":[],"listItems":[],"multiselect":false,"name":"personagensEmBatalha","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
+    {"$GMObjectProperty":"","%Name":"personagensEmBatalha","filters":[],"listItems":[],"multiselect":false,"name":"personagensEmBatalha","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":6,},
     {"$GMObjectProperty":"","%Name":"personagemEmTurno","filters":[],"listItems":[],"multiselect":false,"name":"personagemEmTurno","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"","%Name":"textoInfo","filters":[],"listItems":[],"multiselect":false,"name":"textoInfo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":2,},
     {"$GMObjectProperty":"","%Name":"tamanhoBarraHPVermelho","filters":[],"listItems":[],"multiselect":false,"name":"tamanhoBarraHPVermelho","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},

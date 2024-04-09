@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"posicionarParaAcao",
   "parent":{
-    "name":"EstagiosAcao",
-    "path":"folders/Scripts/Battle/EstagiosAcao.yy",
+    "name":"Madruga",
+    "path":"folders/Scripts/Battle/EstagiosAcao/Madruga.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

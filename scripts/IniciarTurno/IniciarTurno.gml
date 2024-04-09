@@ -8,7 +8,6 @@ function IniciarTurno() {
 	    instance_create_depth(x, y, depth-20, objOpcoesBattle, {player: pesonagemAtual});
 	}
 	else {
-		pesonagemAtual.selecionado = true;
-		alarm[2] = 120;
+		definirAcaoInimigoBatalha(pesonagemAtual);
 	}
 }

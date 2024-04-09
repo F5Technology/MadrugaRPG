@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"definirAcaoInimigoBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"definirAcaoInimigoBatalha",
+  "parent":{
+    "name":"Aranha",
+    "path":"folders/Scripts/Battle/Acoes/Aranha.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

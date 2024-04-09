@@ -90,7 +90,13 @@ function criarFichas() {
 		xp: 9,
 		maxHP: 175,
 		hp: 175,
-		dano: [6, 9]
+				ataques: [
+			{
+					tipo: AtaquesEnum.Normal,
+					mensagem: "Aranha atacou {0}",
+					dano: [6, 9]
+			}
+		]
 	}
 	
 	#endregion
