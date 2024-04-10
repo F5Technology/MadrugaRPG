@@ -9,4 +9,11 @@ if (hit || morto) {
 	}
 }
 
+if (acao == executarAcao) {
+    depth = -y;
+}
+else {
+    depth = -y + 11;
+}
+
 draw_self();

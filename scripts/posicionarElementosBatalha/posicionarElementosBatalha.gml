@@ -21,7 +21,7 @@ function posicionarElementosBatalha() {
 		posicaoY += 20;
 		draw_sprite(sprBarraHPVazio, 0, posicaoX, posicaoY);
 		
-		if (object_exists(objPlayerBattle)) {
+		if (instance_exists(objPlayerBattle)) {
 			tamanhoPreenchimento = (objPlayerBattle.ficha.hp/objPlayerBattle.ficha.maxHP) * sprite_get_width(sprPreenchimentoHP);
 			
 			if (tamanhoPreenchimento < tamanhoMinimoHP && tamanhoPreenchimento > 0) {
@@ -55,7 +55,7 @@ function posicionarElementosBatalha() {
 		posicaoY += sprite_get_height(sprBarraHPVazio);
 		draw_sprite(sprBarraPPVazio, 0, posicaoX, posicaoY);
 		
-		if (object_exists(objPlayerBattle)) {
+		if (instance_exists(objPlayerBattle)) {
 			tamanhoPreenchimento = (objPlayerBattle.ficha.pp/objPlayerBattle.ficha.maxPP) * sprite_get_width(sprPreenchimentoPP);
 			
 			if (tamanhoPreenchimento < tamanhoMinimoPP && tamanhoPreenchimento > 0) {

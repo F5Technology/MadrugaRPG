@@ -1,12 +1,12 @@
 function voltarPosicaoDeOrigem() {
 	if (object_index == objPlayerBattle) {
-	    spriteAtual = sprMadrugaBattlePuloPraTras;
-		acao = playerVoltandoPosicaoOrigem;
+	    sprite_index = sprMadrugaBattlePuloPraTras;
 	}
 	else if (object_index == objInimigoBattle) {
-	    // TODO: sprite inimigo voltando pra tras
+	    spriteAtual = sprAranhaBattlePuloPraTras;
 	}
 	
 	image_speed = 1;
-	move_towards_point(origemX, origemY, 8);
+	acao = voltandoPosicaoOrigem;
+	move_towards_point(origemX, origemY, 7);
 }

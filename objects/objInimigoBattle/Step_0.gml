@@ -1,1 +1,2 @@
 checarMorteInimigo();
+acao();

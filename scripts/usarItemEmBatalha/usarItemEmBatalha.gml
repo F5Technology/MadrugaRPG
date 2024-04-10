@@ -38,7 +38,7 @@ function usarItemEmBatalha() {
 		instance_create_depth(x - 24, y, -9999999, objBrilhoUsandoItem);
 		
 		//Sprites piscando
-		spriteAtual = sprMadrugaBattleUsandoItemBrilhando;
+		sprite_index = sprMadrugaBattleUsandoItemBrilhando;
 		image_index = 0;
 		objIconePlayerBattle.sprite_index = sprIconeMadrugaPadraoBrilhando;
 		objIconePlayerBattle.image_index = 0;

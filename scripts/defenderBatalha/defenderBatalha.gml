@@ -4,7 +4,7 @@ function defenderBatalha() {
 		
 		fimTurno = true;
 		pesonagemAtual.defendendo = true;
-		pesonagemAtual.spriteAtual = sprMadrugaBattleDefendendo;
+		pesonagemAtual.sprite_index = sprMadrugaBattleDefendendo;
 	}
 	
 	instance_destroy();

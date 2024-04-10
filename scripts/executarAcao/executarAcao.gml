@@ -2,19 +2,37 @@ function executarAcao(){
 	switch (acaoAtual) {
 	    case AcaoBatalhaEnum.Atacar:
 			if (ataqueSelecionado && ataqueSelecionado.tipo ==  AtaquesEnum.Normal) {
-				if (spriteAtual != sprMadrugaBattleAtacando) {
-				    image_index = 0;
-					spriteAtual = sprMadrugaBattleAtacando;
+				if (object_index == objPlayerBattle) {
+					if (sprite_index != sprMadrugaBattleAtacando) {
+					    image_index = 0;
+						sprite_index = sprMadrugaBattleAtacando;
+					}
+					
+					if (round(image_index) == 1 && inimigoSelecionado) {
+						aplicarDanoEmInimigo();
+					}
+					
+					if (checarFImAnimacao()) {
+						alarm[1] = 30;
+						image_speed = 0;
+						ataqueSelecionado = 0;
+					}
 				}
-				
-				if (round(image_index) == 1 && inimigoSelecionado) {
-					aplicarDanoEmInimigo();
-				}
-				
-				if (checarFImAnimacao()) {
-					alarm[1] = 30;
-					image_speed = 0;
-					ataqueSelecionado = 0;
+				else if (object_index == objInimigoBattle) {
+					if (spriteAtual != sprAranhaBattleAtacando) {
+					    image_index = 0;
+						spriteAtual = sprAranhaBattleAtacando;
+					}
+					
+					if (round(image_index) == 1 && playerSelecionado) {
+						aplicarDanoEmPlayer();
+					}
+					
+					if (checarFImAnimacao()) {
+						alarm[2] = 30;
+						image_speed = 0;
+						ataqueSelecionado = 0;
+					}
 				}
 			} 
 			else if (ataqueSelecionado && ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
@@ -38,7 +56,7 @@ function executarAcao(){
 		   
 		   if (checarFImAnimacao()) {
 				objBattle.fimTurno = true;
-				spriteAtual = sprMadrugaBattleIdle;
+				sprite_index = sprMadrugaBattleIdle;
 				objIconePlayerBattle.sprite_index = sprIconeMadrugaPadrao;
 				acaoAtual = AcaoBatalhaEnum.Nenhum;
 				acao = function () {

@@ -1,13 +1,13 @@
 function IniciarTurno() {
 	textoInfo = "";
-	var pesonagemAtual = personagensEmBatalha[personagemEmTurno];
+	var personagemAtual = personagensEmBatalha[personagemEmTurno];
 	
-	if (pesonagemAtual.object_index == objPlayerBattle) {
-		pesonagemAtual.defendendo = false;
-		pesonagemAtual.spriteAtual = sprMadrugaBattleIdle;
-	    instance_create_depth(x, y, depth-20, objOpcoesBattle, {player: pesonagemAtual});
+	if (personagemAtual.object_index == objPlayerBattle) {
+		personagemAtual.defendendo = false;
+		personagemAtual.sprite_index = sprMadrugaBattleIdle;
+	    instance_create_depth(x, y, depth-20, objOpcoesBattle, {player: personagemAtual});
 	}
 	else {
-		definirAcaoInimigoBatalha(pesonagemAtual);
+		definirAcaoInimigoBatalha(personagemAtual);
 	}
 }

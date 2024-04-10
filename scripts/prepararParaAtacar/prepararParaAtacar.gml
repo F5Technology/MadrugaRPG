@@ -10,15 +10,16 @@ function prepararParaAtacar(inimigo) {
 		if (ataqueSelecionado.tipo ==  AtaquesEnum.Normal) {
 			alarm[0] = 40;
 			acao = posicionarParaAcao;
-			spriteAtual = sprMadrugaBattleDashPraFrente;
-			move_towards_point(inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10, 6);
+			sprite_index = sprMadrugaBattleDashPraFrente;
+			move_towards_point(inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10, 5);
 		} 
 		else if (ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
 			acao = executarAcao;
 			ficha.pp -= ataqueSelecionado.custoPP;
-			spriteAtual = sprMadrugaBattleLancandoBastaoFogo;
+			sprite_index = sprMadrugaBattleLancandoBastaoFogo;
 		}
 	}
 	
+	//Destroy o menu de opções
 	instance_destroy();
 }

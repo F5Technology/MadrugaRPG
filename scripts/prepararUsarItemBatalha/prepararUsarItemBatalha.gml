@@ -4,7 +4,7 @@ function prepararUsarItemBatalha(item) {
 	with (player) {
 		image_index = 0;
 		itemSelecionado = item;
-		spriteAtual = sprMadrugaBattleUsandoItem;
+		sprite_index = sprMadrugaBattleUsandoItem;
 		acaoAtual = AcaoBatalhaEnum.UsarItem;
 		acao = posicionarParaAcao;
 		alarm[0] = 30;

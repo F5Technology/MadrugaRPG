@@ -24,7 +24,7 @@ function aplicarDanoEmInimigo() {
 		}
 	} else {
 		inimigoSelecionado.hit = true;
-		inimigoSelecionado.alarm[0] = 60;
+		inimigoSelecionado.alarm[0] = 70;
 		inimigoSelecionado.image_index = 0;
 		inimigoSelecionado.spriteAtual = sprAranhaBattleTomandoHit;
 	}

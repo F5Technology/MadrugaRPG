@@ -3,7 +3,7 @@ function fugirBatalha() {
 	
 	with (objOpcoesBattle.player) {		
 		image_index = 0;
-		spriteAtual = sprMadrugaBattleFugindo;
+		sprite_index = sprMadrugaBattleFugindo;
 		acaoAtual = AcaoBatalhaEnum.Fugir;
 		acao = posicionarParaAcao;
 		move_towards_point(x - 20, y, 2);

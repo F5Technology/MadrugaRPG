@@ -1,9 +1,23 @@
 function posicionarParaAcao() {
 	switch (acaoAtual) {
 	    case AcaoBatalhaEnum.Atacar:
-			if (point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 6) {
-			    speed = 0;
-				spriteAtual = sprMadrugaBattleIdle;
+			var concluidoPosicionamento = false;
+			
+			if (object_index == objPlayerBattle) {
+				concluidoPosicionamento = point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 5;
+				
+				if (concluidoPosicionamento) {
+				    speed = 0;
+					sprite_index = sprMadrugaBattleIdle;
+				}
+			}
+			else if (object_index == objInimigoBattle) {
+				concluidoPosicionamento = point_distance(x, y, playerSelecionado.x + (playerSelecionado.sprite_width / 2), playerSelecionado.y + 10) <= 5;
+				
+				if (concluidoPosicionamento) {
+				    speed = 0;
+					spriteAtual = sprAranhaBattleIdle;
+				}
 			}
 	        break;
 	    case AcaoBatalhaEnum.UsarItem:
