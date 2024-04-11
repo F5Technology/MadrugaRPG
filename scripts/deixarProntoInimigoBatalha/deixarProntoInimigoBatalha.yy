@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"deixarProntoInimigoBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"deixarProntoInimigoBatalha",
+  "parent":{
+    "name":"Aranha",
+    "path":"folders/Scripts/Battle/Acoes/Aranha.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -89,6 +89,7 @@ function criarFichas() {
 		nome: "Aranha",
 		xp: 9,
 		maxHP: 175,
+		status: StatusBatalhaEnum.Normal,
 		hp: 175,
 				ataques: [
 			{
@@ -127,6 +128,7 @@ function criarFichas() {
 			HP: 300,
 			PP: 0
 		},
+		
 		//Equipaveis
 		{
 			codigo: ItensEnum.AnelDeFogo,

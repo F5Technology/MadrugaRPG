@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"StatusBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"StatusBatalha",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Ferramentas/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

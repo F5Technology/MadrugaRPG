@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"checarMorteInimigoBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"checarMorteInimigoBatalha",
+  "parent":{
+    "name":"Aranha",
+    "path":"folders/Scripts/Battle/Acoes/Aranha.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndQueimado",
+  "audioGroupId":{
+    "name":"sfxEfeitos",
+    "path":"audiogroups/sfxEfeitos",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":2,
+  "conversionMode":0,
+  "duration":1.906939,
+  "name":"sndQueimado",
+  "parent":{
+    "name":"Efeitos",
+    "path":"folders/Sounds/SFX/Efeitos.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndQueimado.mp3",
+  "type":1,
+  "volume":1.0,
+}

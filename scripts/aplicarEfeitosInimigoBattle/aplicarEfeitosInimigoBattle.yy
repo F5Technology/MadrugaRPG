@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"aplicarEfeitosInimigoBattle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"aplicarEfeitosInimigoBattle",
+  "parent":{
+    "name":"Sprites",
+    "path":"folders/Scripts/Battle/Sprites.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

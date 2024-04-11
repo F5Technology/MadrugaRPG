@@ -9,7 +9,7 @@ function executarAcao(){
 					}
 					
 					if (round(image_index) == 1 && inimigoSelecionado) {
-						aplicarDanoEmInimigo();
+						aplicarDanoEmInimigoBatalha();
 					}
 					
 					if (checarFImAnimacao()) {
@@ -25,7 +25,7 @@ function executarAcao(){
 					}
 					
 					if (round(image_index) == 1 && playerSelecionado) {
-						aplicarDanoEmPlayer();
+						aplicarDanoEmPlayerBatalha();
 					}
 					
 					if (checarFImAnimacao()) {

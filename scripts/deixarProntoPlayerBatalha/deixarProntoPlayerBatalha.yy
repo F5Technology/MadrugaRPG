@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"deixarProntoPlayerBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"deixarProntoPlayerBatalha",
+  "parent":{
+    "name":"Madruga",
+    "path":"folders/Scripts/Battle/Acoes/Madruga.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -5,9 +5,7 @@ function checarTurno() {
 		if (fimTurno) {
 			var limiteIndicePersonagens = array_length(personagensEmBatalha) - 1;
 			
-		    fimTurno = false;
-			personagensEmBatalha[personagemEmTurno].selecionado = false;
-			
+		    fimTurno = false;			
 			personagemEmTurno++;
 			
 			if (personagemEmTurno > limiteIndicePersonagens) {

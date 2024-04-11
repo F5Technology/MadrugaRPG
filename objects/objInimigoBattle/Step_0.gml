@@ -1,2 +1,2 @@
-checarMorteInimigo();
+checarMorteInimigoBatalha();
 acao();

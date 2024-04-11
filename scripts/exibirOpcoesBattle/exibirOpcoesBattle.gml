@@ -9,7 +9,7 @@ function exibirOpcoesBattle() {
 	        renderListaAtaquesMenuBatalha();
 	        break;
 		case MenuEnum.SelecionarInimigo:
-	        renderSelecionarInimigo();
+	        renderSelecionarInimigoBatalha();
 	        break;
 		case MenuEnum.Itens:
 	        renderListaItensMenuBatalha();

@@ -23,6 +23,6 @@ function definirAcaoInimigoBatalha(inimigo) {
 			}
 		} else {
 			inimigo.selecionado = true;
-			alarm[2] = 120;
+			alarm[3] = 120;
 		}
 }

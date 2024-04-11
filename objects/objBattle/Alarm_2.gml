@@ -1,2 +1,3 @@
-/// @description Teste do sistema de turno
-fimTurno = true;
+definirAcaoInimigoBatalha(inimigoSelecionado);
+inimigoSelecionado = 0;
+inimigosProntos = false;
