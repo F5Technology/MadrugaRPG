@@ -3,7 +3,7 @@ function aplicarEfeitosInimigoBattle(){
 	exibirSpritePersonagemSelecionado();
 	
 	if (!morto && ficha.status == StatusBatalhaEnum.Queimado && acaoAtual == AcaoBatalhaEnum.Nenhum) {
-		var frame = spriteAtual == sprAranhaBattleQueimando ? 0 : image_index;
+		var frame = spriteAtual == sprAranhaBattleQueimando || selecionado || hit ? 0 : image_index;
 		
 		draw_sprite(sprIconeStatusQueimado, frame, x - 5, y - sprite_height + 7);
 	}
@@ -17,7 +17,10 @@ function aplicarEfeitosInimigoBattle(){
 	}
 	
 	//Profundidade
-	if (acao == executarAcao) {
+	if (objBattle.finalBatalha == FinalBatalhaEnum.Derrota) {
+		depth = objBattle.depth - 1;
+	}
+	else if (acao == executarAcao) {
 	    depth = -y;
 	}
 	else if (instance_exists(objOpcoesBattle)) {

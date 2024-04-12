@@ -7,7 +7,7 @@ function interagirEmTela() {
 		        room_goto(rmTeste);
 		        break;
 		case rmGameOver:
-				audio_group_stop_all(sngCutscenes);			
+				audio_group_stop_all(sngOST);			
 		        room_goto(rmTelaInicial);
 	        break;
 		}

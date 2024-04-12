@@ -40,14 +40,14 @@ function criarFichas() {
 	seuMadruga = 
 	{
 		nome: "Seu Madruga",
-		level: 1,
-		maxXP: dadoMadruga[1].maxXP,
+		level: levelAtual,
+		maxXP: dadoMadruga[levelAtual].maxXP,
 		xp: 0,
-		maxHP: dadoMadruga[1].maxHP,
-		hp: dadoMadruga[1].maxHP,
-		maxPP: dadoMadruga[1].maxPP,
-		pp:  dadoMadruga[1].maxPP,
-		defesa: dadoMadruga[1].defesa,
+		maxHP: dadoMadruga[levelAtual].maxHP,
+		hp: dadoMadruga[levelAtual].maxHP,
+		maxPP: dadoMadruga[levelAtual].maxPP,
+		pp:  dadoMadruga[levelAtual].maxPP,
+		defesa: dadoMadruga[levelAtual].defesa,
 		anel: ItensEnum.Nenhum,
 		iconesMenu: [
 			sprIconeMadrugaPadrao,
@@ -66,16 +66,16 @@ function criarFichas() {
 					nome: "Ataque normal",
 					mensagem: "Seu Madruga atacou {0}",
 					descricao: "Efetua um golpe normal no inimigo",
-					custoPP: dadoMadruga[1].custoPP.normal,
-					dano: dadoMadruga[1].dano.normal
+					custoPP: dadoMadruga[levelAtual].custoPP.normal,
+					dano: dadoMadruga[levelAtual].dano.normal
 			},
 			{
 					tipo: AtaquesEnum.BastaoFogo,
 					nome: "Bastao de fogo",
 					mensagem: "Seu Madruga atingiu {0} com o bastao de fogo",
 					descricao: "Cria uma bola de fogo que atinge o inimigo",
-					custoPP: dadoMadruga[1].custoPP.bastaoFogo,
-					dano: dadoMadruga[1].dano.bastaoFogo
+					custoPP: dadoMadruga[levelAtual].custoPP.bastaoFogo,
+					dano: dadoMadruga[levelAtual].dano.bastaoFogo
 			}
 		]
 	}
@@ -87,7 +87,7 @@ function criarFichas() {
 	aranha = 
 	{
 		nome: "Aranha",
-		xp: 9,
+		xp: 35,
 		maxHP: 175,
 		status: StatusBatalhaEnum.Normal,
 		hp: 175,

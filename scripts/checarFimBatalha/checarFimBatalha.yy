@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"checarFimBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"checarFimBatalha",
+  "parent":{
+    "name":"Sistemas",
+    "path":"folders/Scripts/Battle/Sistemas.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

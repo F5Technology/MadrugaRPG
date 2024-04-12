@@ -67,6 +67,8 @@ function executarAcao(){
 	    case AcaoBatalhaEnum.Fugir:
 	        if (image_alpha > 0) {
 			    image_alpha -= 0.2;
+			} else if (objBattle.finalBatalha == FinalBatalhaEnum.Nenhum) {
+				objBattle.fimTurno = true;
 			}
 	        break;
 	}

@@ -13,6 +13,6 @@ function colidirEscada() {
 		var posicaoX = camera_get_view_x(view_camera[0]);
 		var posicaoY = camera_get_view_y(view_camera[0]);
 		
-		layer_sequence_create("Effects", posicaoX, posicaoY, aniFadeIn);
+		layer_sequence_create("Effects", posicaoX, posicaoY, aniFadeInEndGame);
 	}
 }

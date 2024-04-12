@@ -1,6 +1,8 @@
 function checarMorteInimigoBatalha(){
 	if (morto && checarFImAnimacao()) {
-		instance_destroy();
 		objBattle.inimigosProntos = true;
+		objBattle.quantidadeInimigos -= 1;
+		objBattle.xpAdquirido += ficha.xp;
+		instance_destroy();
 	}
 }

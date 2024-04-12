@@ -16,7 +16,7 @@ function posicionarObjetosBatalha() {
 	posicaoY = cameraY + sprite_get_height(sprCenarioBattle) - sprite_get_height(sprIconeMadrugaPadrao) - 1;
 	instance_create_depth(posicaoX, posicaoY, depth-10, objIconePlayerBattle);
 	
-	for (var inimigo = 1; inimigo <= 3; ++inimigo) {
+	for (var inimigo = 1; inimigo <= quantidadeInimigos; ++inimigo) {
 		switch (inimigo) {
 		    case 1:
 		        posicaoX = cameraX + sprite_get_width(sprCenarioBattle) - 96;

@@ -18,8 +18,9 @@ function aplicarDanoEmPlayerBatalha(){
 	if (playerSelecionado.ficha.hp <= 0) {
 		playerSelecionado.morto = true;
 		playerSelecionado.image_index = 0;
-		playerSelecionado.sprite_index = sprMadrugaBattleMorto
+		playerSelecionado.sprite_index = sprMadrugaBattleMorto;
 		
+		objBattle.playerPronto = true;
 	    objIconePlayerBattle.image_index = 0;
 		objIconePlayerBattle.sprite_index = sprIconeMadrugaMorto;
 	}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"atualizarFichasPlayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"atualizarFichasPlayer",
+  "parent":{
+    "name":"Sistema",
+    "path":"folders/Scripts/Sistema.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

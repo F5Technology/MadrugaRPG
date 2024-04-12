@@ -1,8 +1,14 @@
 function checarTurno() {
 	var emBatalha = global.emBatalha;
 	
-	if (emBatalha) {
-		if (fimTurno) {
+	if (emBatalha && fimTurno) {
+		var fimBatalha = checarFimBatalha();
+		
+		if (fimBatalha) {
+			alarm[3] = 60;		    
+			textoInfo = "";
+			fimTurno = false;
+		} else {
 			var limiteIndicePersonagens = array_length(personagensEmBatalha) - 1;
 			
 		    fimTurno = false;			

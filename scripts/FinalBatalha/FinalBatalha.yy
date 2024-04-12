@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FinalBatalha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FinalBatalha",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Scripts/Ferramentas/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

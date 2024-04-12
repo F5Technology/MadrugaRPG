@@ -1,4 +1,3 @@
-tamanhoBarraHPVermelho = (objPlayerOW.ficha.hp/objPlayerOW.ficha.maxHP) * sprite_get_width(sprPreenchimentoHP);
 ataqueSelecionado = {
 		tipo: AtaquesEnum.Queimadura,
 		nome: "Queimadura",
