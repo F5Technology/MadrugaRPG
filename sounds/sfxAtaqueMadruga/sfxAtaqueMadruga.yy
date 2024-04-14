@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfxAtaqueMadruga",
+  "audioGroupId":{
+    "name":"sfxBattle",
+    "path":"audiogroups/sfxBattle",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":2,
+  "conversionMode":0,
+  "duration":0.373605,
+  "name":"sfxAtaqueMadruga",
+  "parent":{
+    "name":"Battle",
+    "path":"folders/Sounds/SFX/Battle.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfxAtaqueMadruga.wav",
+  "type":1,
+  "volume":1.0,
+}

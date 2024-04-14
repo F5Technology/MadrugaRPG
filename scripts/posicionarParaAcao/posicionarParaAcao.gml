@@ -4,7 +4,7 @@ function posicionarParaAcao() {
 			var concluidoPosicionamento = false;
 			
 			if (object_index == objPlayerBattle) {
-				concluidoPosicionamento = point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 5;
+				concluidoPosicionamento = point_distance(x, y, inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10) <= 7;
 				
 				if (concluidoPosicionamento) {
 				    speed = 0;
@@ -12,7 +12,7 @@ function posicionarParaAcao() {
 				}
 			}
 			else if (object_index == objInimigoBattle) {
-				concluidoPosicionamento = point_distance(x, y, playerSelecionado.x + (playerSelecionado.sprite_width / 2), playerSelecionado.y + 10) <= 5;
+				concluidoPosicionamento = point_distance(x, y, playerSelecionado.x + (playerSelecionado.sprite_width / 2), playerSelecionado.y + 10) <= 7;
 				
 				if (concluidoPosicionamento) {
 				    speed = 0;

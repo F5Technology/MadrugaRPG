@@ -22,7 +22,7 @@ function aplicarDanoEmPlayerBatalha(){
 		
 		objBattle.playerPronto = true;
 	    objIconePlayerBattle.image_index = 0;
-		objIconePlayerBattle.sprite_index = sprIconeMadrugaMorto;
+		objIconePlayerBattle.sprite_index = playerSelecionado.ficha.iconesBatalha.morto;
 	}
 	else {		
 		playerSelecionado.hit = true;
@@ -32,9 +32,10 @@ function aplicarDanoEmPlayerBatalha(){
 		
 		objIconePlayerBattle.hit = true;
 		objIconePlayerBattle.image_index = 0;
-		objIconePlayerBattle.sprite_index = sprIconeMadrugaDanoAnimado;
+		objIconePlayerBattle.sprite_index = playerSelecionado.ficha.iconesBatalha.dano;
 	}
 	
+	reproduzirSFXBattle(sfxAtaqueAranha);
 	instance_create_depth(playerSelecionado.x,playerSelecionado. y, -9999999, objValorBatalha, {valor: dano, cor: #ffffff});
 	
 	playerSelecionado = 0;

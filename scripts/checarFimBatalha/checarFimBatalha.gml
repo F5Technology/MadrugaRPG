@@ -3,6 +3,7 @@ function checarFimBatalha(){
 	
 	if (quantidadeInimigos == 0) {
 		fimBatalha = true;
+		trocarMusica(trackVitoria, 60);
 	    finalBatalha = FinalBatalhaEnum.Vitoria;
 	}
 	else {

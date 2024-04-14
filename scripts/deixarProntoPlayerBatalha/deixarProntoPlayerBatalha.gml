@@ -5,7 +5,7 @@ function deixarProntoPlayerBatalha() {
 	
 	objIconePlayerBattle.hit = false;
 	objIconePlayerBattle.image_speed = 1;
-	objIconePlayerBattle.sprite_index = sprIconeMadrugaPadrao;
+	objIconePlayerBattle.sprite_index = ficha.iconesBatalha.padrao;
 	
 	objBattle.playerPronto = true;
 }

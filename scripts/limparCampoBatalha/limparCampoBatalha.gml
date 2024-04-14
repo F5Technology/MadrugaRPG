@@ -7,6 +7,7 @@ function limparCampoBatalha() {
 	objPlayerOW.ficha = objPlayerBattle.ficha;
 	
 	instance_destroy();
+	instance_destroy(objLevelUp);
 	instance_destroy(objPlayerBattle);
 	instance_destroy(objInimigoBattle);
 	instance_destroy(objIconePlayerBattle);

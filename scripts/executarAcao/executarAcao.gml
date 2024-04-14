@@ -37,6 +37,7 @@ function executarAcao(){
 			} 
 			else if (ataqueSelecionado && ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
 				if (round(image_index) == 4 && inimigoSelecionado) {
+					reproduzirSFXBattle(sfxLancando);
 					instance_create_depth(x + 5, y - 5, depth-20, objBastaoFogo, {inimigoSelecionado: inimigoSelecionado, ataqueSelecionado: ataqueSelecionado});
 					inimigoSelecionado = 0;
 				}
@@ -57,7 +58,7 @@ function executarAcao(){
 		   if (checarFImAnimacao()) {
 				objBattle.fimTurno = true;
 				sprite_index = sprMadrugaBattleIdle;
-				objIconePlayerBattle.sprite_index = sprIconeMadrugaPadrao;
+				objIconePlayerBattle.sprite_index = ficha.iconesBatalha.padrao;
 				acaoAtual = AcaoBatalhaEnum.Nenhum;
 				acao = function () {
 					//Funcao vazia

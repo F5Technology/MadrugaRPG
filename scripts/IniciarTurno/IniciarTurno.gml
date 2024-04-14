@@ -3,6 +3,9 @@ function IniciarTurno() {
 	var personagemAtual = personagensEmBatalha[personagemEmTurno];
 	
 	if (personagemAtual.object_index == objPlayerBattle) {
+		var voz = choose(vozApresentacao1, vozApresentacao2, vozApresentacao3, vozApresentacao4);
+		
+		reproduzirSFXVoz(voz);		
 		personagemAtual.defendendo = false;
 		personagemAtual.sprite_index = sprMadrugaBattleIdle;
 	    instance_create_depth(x, y, depth-20, objOpcoesBattle, {player: personagemAtual});

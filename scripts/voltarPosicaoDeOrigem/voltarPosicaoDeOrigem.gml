@@ -8,5 +8,5 @@ function voltarPosicaoDeOrigem() {
 	
 	image_speed = 1;
 	acao = voltandoPosicaoOrigem;
-	move_towards_point(origemX, origemY, 7);
+	move_towards_point(origemX, origemY, 8);
 }

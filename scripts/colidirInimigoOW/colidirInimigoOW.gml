@@ -5,10 +5,10 @@ function colidirInimigoOW() {
 		instance_create_layer(-10, -10, "Main", objTransicao);
 	    reproduzirTransicaoBatalha();
 		
-		objBattle.alarm[0] = 60;
-		//objBattle.fimTurno = false;
-		//objBattle.personagemEmTurno = 0;
-		//objBattle.alarm[0] = 120;
+		var tempo = 60;
+		objBattle.alarm[0] = tempo;
+		trocarMusica(trackBattle, tempo);
+		
 		inimigo.cooldown = true;
 		global.inimigoColidido = inimigo;
 	}

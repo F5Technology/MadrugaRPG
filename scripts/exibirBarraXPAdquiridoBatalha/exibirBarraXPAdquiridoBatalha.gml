@@ -15,6 +15,9 @@ function exibirBarraXPAdquiridoBatalha(){
 			levelBarraXP = ficha.level;
 			maxBarraXP = ficha.maxXP;
 		    tamanhoBarraXP = sprite_get_width(sprPreenchimentoXP);
+			
+			reproduzirSFXBattle(sfxLevelUP);
+			instance_create_depth(posicaoX, posicaoY, depth - 1, objLevelUp);
 		}
 	}
 	

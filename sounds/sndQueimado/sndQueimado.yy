@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":2,
   "conversionMode":0,
-  "duration":1.906939,
+  "duration":0.723946,
   "name":"sndQueimado",
   "parent":{
     "name":"Efeitos",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndQueimado.mp3",
+  "soundFile":"sndQueimado.wav",
   "type":1,
   "volume":1.0,
 }

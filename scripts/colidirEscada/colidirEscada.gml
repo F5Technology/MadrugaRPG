@@ -3,6 +3,7 @@ function colidirEscada() {
 	
 	if (!emTransicao) {
 		alarm[0] = 160;
+		pararMusica();
 		global.fimJogo = true;
 		global.emTransicao = true;
 		

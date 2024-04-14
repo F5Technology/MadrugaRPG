@@ -19,7 +19,7 @@ function definirAcaoInimigoBatalha(inimigo) {
 				acao = posicionarParaAcao;
 				acaoAtual = AcaoBatalhaEnum.Atacar;
 				spriteAtual = sprAranhaBattleDashPraFrente;
-				move_towards_point(playerSelecionado.x + (playerSelecionado.sprite_width / 2), playerSelecionado.y + 10, 5);
+				move_towards_point(playerSelecionado.x + (playerSelecionado.sprite_width / 2), playerSelecionado.y + 10, 7);
 			}
 		} else {
 			inimigo.selecionado = true;

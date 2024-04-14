@@ -40,7 +40,7 @@ function usarItemEmBatalha() {
 		//Sprites piscando
 		sprite_index = sprMadrugaBattleUsandoItemBrilhando;
 		image_index = 0;
-		objIconePlayerBattle.sprite_index = sprIconeMadrugaPadraoBrilhando;
+		objIconePlayerBattle.sprite_index = ficha.iconesBatalha.brilhando;
 		objIconePlayerBattle.image_index = 0;
 		
 		//Limpar item selecionado

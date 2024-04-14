@@ -119,8 +119,8 @@
   "maintainGms1Font":false,
   "name":"fntIInfoNome",
   "parent":{
-    "name":"UI",
-    "path":"folders/Fonts/UI.yy",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

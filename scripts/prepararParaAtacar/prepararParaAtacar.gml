@@ -11,12 +11,13 @@ function prepararParaAtacar(inimigo) {
 			alarm[0] = 40;
 			acao = posicionarParaAcao;
 			sprite_index = sprMadrugaBattleDashPraFrente;
-			move_towards_point(inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10, 5);
+			move_towards_point(inimigoSelecionado.x - (inimigoSelecionado.sprite_width / 2) - 3, inimigoSelecionado.y - 10, 7);
 		} 
 		else if (ataqueSelecionado.tipo ==  AtaquesEnum.BastaoFogo) {
 			acao = executarAcao;
 			ficha.pp -= ataqueSelecionado.custoPP;
 			sprite_index = sprMadrugaBattleLancandoBastaoFogo;
+			reproduzirSFXVoz(vozBastaoFogo);
 		}
 	}
 	

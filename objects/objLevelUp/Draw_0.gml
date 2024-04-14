@@ -1,0 +1,2 @@
+exibirTextoLevelUP();
+draw_self();

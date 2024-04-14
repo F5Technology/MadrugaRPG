@@ -16,6 +16,7 @@ function aplicarDanoEmInimigoBatalha() {
 		inimigoSelecionado.morto = true;
 		inimigoSelecionado.image_index = 0;
 		inimigoSelecionado.spriteAtual = sprAranhaBattleMorrendo;
+		reproduzirSFXBattle(sfxInimigoMorrendoV3);
 
 		var indice = array_find_index(objBattle.personagensEmBatalha, function(inimigo) { return inimigo == inimigoSelecionado; });
 		
@@ -26,6 +27,7 @@ function aplicarDanoEmInimigoBatalha() {
 		inimigoSelecionado.hit = true;
 		inimigoSelecionado.alarm[0] = 50;
 		inimigoSelecionado.image_index = 0;
+		reproduzirSFXBattle(sfxAtaqueMadruga);
 		
 		if (ataqueSelecionado.tipo == AtaquesEnum.Queimadura) {
 			inimigoSelecionado.spriteAtual = sprAranhaBattleQueimando;

@@ -15,3 +15,15 @@ function reproduzirSFXEfeitos(sfx){
 	
 	audio_play_sound(sfx, 1, false);
 }
+
+function reproduzirSFXBattle(sfx){
+	audio_group_stop_all(sfxBattle);
+	
+	audio_play_sound(sfx, 1, false);
+}
+
+function reproduzirSFXVoz(sfx){
+	audio_group_stop_all(sfxVozes);
+	
+	audio_play_sound(sfx, 1, false);
+}

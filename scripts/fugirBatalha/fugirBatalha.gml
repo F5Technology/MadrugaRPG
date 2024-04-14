@@ -1,4 +1,5 @@
 function fugirBatalha() {
+	reproduzirSFXBattle(sfxFuga);
 	objBattle.textoInfo = "Arregou!";
 	
 	with (objOpcoesBattle.player) {		
