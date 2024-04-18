@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objPedra",
+  "%Name":"objPedraTipo1",
   "eventList":[],
   "managed":true,
-  "name":"objPedra",
+  "name":"objPedraTipo1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos de colisão",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlaceholderPedra",
-    "path":"sprites/sprPlaceholderPedra/sprPlaceholderPedra.yy",
+    "name":"sprPedraTipo1",
+    "path":"sprites/sprPedraTipo1/sprPedraTipo1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

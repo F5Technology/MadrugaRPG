@@ -1,5 +1,6 @@
 function limparCampoBatalha() {				
 	layer_set_visible("Tileset", true);
+	instance_activate_object(objEscada);
 	instance_activate_object(objColisao);
 	instance_activate_object(objPlayerOW);
 	instance_activate_object(objInimigoOW);

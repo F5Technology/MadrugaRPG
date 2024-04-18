@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objArvore",
+  "%Name":"objArvoreTipo2",
   "eventList":[],
   "managed":true,
-  "name":"objArvore",
+  "name":"objArvoreTipo2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos de colisão",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlaceholderArvore",
-    "path":"sprites/sprPlaceholderArvore/sprPlaceholderArvore.yy",
+    "name":"sprArvoreTipo2",
+    "path":"sprites/sprArvoreTipo2/sprArvoreTipo2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

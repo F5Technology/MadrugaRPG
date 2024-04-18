@@ -6,10 +6,10 @@ function criarFichas() {
 		{
 			maxXP: 150,
 			maxHP: 675,
-			maxPP: 200,
+			maxPP: 300,
 			defesa: 4,
 			dano: {
-				normal: [26, 39],
+				normal: [34, 49],
 				bastaoFogo: [100]
 			},
 			custoPP: {
@@ -20,10 +20,10 @@ function criarFichas() {
 		{
 			maxXP: 300,
 			maxHP: 750,
-			maxPP: 225,
+			maxPP: 360,
 			defesa: 5,
 			dano: {
-				normal: [29, 44],
+				normal: [49, 64],
 				bastaoFogo: [200]
 			},
 			custoPP: {
@@ -90,7 +90,7 @@ function criarFichas() {
 	aranha = 
 	{
 		nome: "Aranha",
-		xp: 35,
+		xp: 22,
 		maxHP: 175,
 		status: StatusBatalhaEnum.Normal,
 		hp: 175,
@@ -98,7 +98,7 @@ function criarFichas() {
 			{
 					tipo: AtaquesEnum.Normal,
 					mensagem: "Aranha atacou {0}",
-					dano: [6, 9]
+					dano: [16, 19]
 			}
 		]
 	}

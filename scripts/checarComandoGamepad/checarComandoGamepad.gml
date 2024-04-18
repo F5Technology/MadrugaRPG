@@ -1,7 +1,7 @@
-function checarComandoGamepad(){
-	var slot = global.slot;
-	
-	if (slot > 0) {
+function checarComandoGamepad(){	
+	if (variable_global_exists("slot") && global.slot > 0) {
+			var slot = global.slot;
+			
 			#region Lista de comandos
 			
 			var cima = gamepad_button_check(slot, gp_padu);
@@ -69,7 +69,9 @@ function checarComandoGamepad(){
 					botaoY ||
 					botaoX
 				) {
-					interagirEmTela();
+					with (objInteracao) {
+						interagirEmTela();
+					}
 				} 
 			}
 			

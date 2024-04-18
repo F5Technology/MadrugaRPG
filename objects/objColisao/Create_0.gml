@@ -1,1 +1,1 @@
-definirSpritePorTipo();
+//definirSpritePorTipo();

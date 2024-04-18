@@ -9,7 +9,10 @@ function colidirEscada() {
 		
 		objColisao.depth = depth;
 		objPlayerOW.depth = depth;
-		objInimigoOW.depth = depth;
+		
+		if (instance_exists(objInimigoOW)) {
+			objInimigoOW.depth = depth;
+		}
 		
 		var posicaoX = camera_get_view_x(view_camera[0]);
 		var posicaoY = camera_get_view_y(view_camera[0]);

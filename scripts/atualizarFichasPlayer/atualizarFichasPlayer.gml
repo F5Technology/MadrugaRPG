@@ -18,9 +18,12 @@ function atualizarFichasPlayer() {
 			sprIconeMadrugaDormindo
 		],
 		iconesBatalha: {
-			dano: sprIconeMadrugaDano,
-			padrao: sprIconeMadrugaParado,
-			fugindo: sprIconeMadrugaMedo
+			dano: sprIconeMadrugaDanoAnimado,
+			padrao: sprIconeMadrugaPadrao,
+			brilhando: sprIconeMadrugaPadraoBrilhando,
+			fugindo: sprIconeMadrugaMedo,
+			morto: sprIconeMadrugaMorto,
+			vitoria: sprIconeMadrugaAnimado
 		},
 		ataques: [
 			{
