@@ -18,8 +18,8 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":44100,
+  "sampleRate":48000,
   "soundFile":"trackBattle.ogg",
   "type":1,
-  "volume":0.7,
+  "volume":1.0,
 }
