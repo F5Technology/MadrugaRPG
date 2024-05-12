@@ -93,7 +93,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.4.0.137",
   },
   "name":"MadrugaRPG",
   "resources":[
@@ -127,8 +127,8 @@
     {"id":{"name":"objMoldura","path":"objects/objMoldura/objMoldura.yy",},},
     {"id":{"name":"objOpcoesBattle","path":"objects/objOpcoesBattle/objOpcoesBattle.yy",},},
     {"id":{"name":"objOST","path":"objects/objOST/objOST.yy",},},
-    {"id":{"name":"objPedraTipo2","path":"objects/objPedraTipo2/objPedraTipo2.yy",},},
     {"id":{"name":"objPedraTipo1","path":"objects/objPedraTipo1/objPedraTipo1.yy",},},
+    {"id":{"name":"objPedraTipo2","path":"objects/objPedraTipo2/objPedraTipo2.yy",},},
     {"id":{"name":"objPlayerBattle","path":"objects/objPlayerBattle/objPlayerBattle.yy",},},
     {"id":{"name":"objPlayerOW","path":"objects/objPlayerOW/objPlayerOW.yy",},},
     {"id":{"name":"objQueimadura","path":"objects/objQueimadura/objQueimadura.yy",},},

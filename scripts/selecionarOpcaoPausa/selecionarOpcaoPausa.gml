@@ -41,7 +41,7 @@ function selecionarOpcaoPausa() {
 			    objetoConfirmacao.funcaoConfirmacao();
 			}
 			else {
-			    voltarMenuBatalha();
+			    voltarMenu();
 			}
 			
 	        break;
